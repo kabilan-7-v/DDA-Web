@@ -1,0 +1,158 @@
+.choose-container{
+    width: 100%;
+    height: 1150px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightblue);
+}
+@media (max-width: 1024px) {
+    .choose-container{
+      height: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .choose-container{
+      height: auto;
+    }
+  }
+  .choose-sec{
+    width: 85%;
+  }
+  .why-choose-head{
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    height: 250px;
+
+}
+
+.why-choose-headcontent{
+    background-color: transparent;
+    margin-top: 100px;
+}
+.why-choose-p1{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--blue);
+    background-color: transparent;
+    
+}
+.why-choose-h1{
+    font-size: 4.5vw;
+    margin-top: 20px;
+}
+.ycard{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+  }
+  .ycard1{
+    width: 340px;
+    height: 230px;
+    border-radius: 30px;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .ycard1 h3{
+    font-size:1.8vw ;
+  }
+  .ycard1 p{
+    margin-top: 20px;
+  }
+  .ycard img{
+    width: 80px;
+    margin-bottom: 30px;
+  }
+  .ycard p{
+    font-size: 18px;
+    color: rgb(151, 151, 151);
+    
+  }
+
+  .ycard2{
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+    padding: 60px;
+    margin-bottom: 30px;
+  }
+  .ycard2 h1{
+    font-size: 4.5vw;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 1024px) {
+    .ycard2 {
+      width: 100%;
+    }
+  }
+@media (max-width: 768px) {
+    .ycard2 {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .linkedin, .instagram, .contact {
+    padding: 10px 20px;
+    background-color: var(--lightblue);
+    color: black;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s;
+    margin-bottom: 10px;
+  }
+  
+  .linkedin:hover,
+  .instagram:hover,
+  .contact:hover {
+    background-color: var(--blue);
+    color: white;
+  }
+  .ycard2-h1{
+    display: flex;  
+    justify-content: space-between;
+    
+  }
+  .ycard2 p{
+    margin-bottom: 20px;
+    font-size: 1.2vw;
+  }
+
+  @media (max-width: 768px) {
+    .world img{
+      width: 70px;
+      
+    }
+  }
+  .linkedin img{
+    width: 2px;
+  }
+  .ycard2-b1 button {
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    color: black;
+    background-color: var(--lightblue);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ycard2-b1 button:hover {
+    background-color: var(--blue); /* Replace with your desired hover color */
+    color: white;
+  }
+  .ycard2-b1 button svg {
+    margin-left: 10px;
+    transition: color 0.3s ease;
+    color: inherit;
+  }
+  
+ 
+  
+  
