@@ -1,8 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "../Pages/Hompage/Homepage";
 import AboutPage from "../Pages/Aboutpage/AboutPage";
+import Phoneverfications from "../firebase/Phoneverfications";
 
 function Routerpage() {
   return (
@@ -10,6 +10,8 @@ function Routerpage() {
       <Routes>
         <Route path="/" element={<Homepage></Homepage>}></Route>
         <Route path="/aboutus" element={<AboutPage></AboutPage>}></Route>
+        <Route path="/verify" element={<Phoneverfications></Phoneverfications>}></Route>
+
 
       </Routes>
     </BrowserRouter>
