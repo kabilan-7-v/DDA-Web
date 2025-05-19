@@ -10,6 +10,7 @@ function Navbar() {
 
   return (
     <div className="container-fluid topbar p-0">
+      <div className='top'>
       <div className="container topbar-content">
         <div className="logo">
           <img src={logo} alt="Company Logo" />
@@ -21,10 +22,10 @@ function Navbar() {
 
         <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
           <ul>
-          <li><Link to="/" ><a href="#">Home</a></Link></li>
+          <li><Link to="/" >Home</Link></li>
           <li> <Link to="/aboutus">About us</Link></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+          <li> <Link to="/services">Services</Link></li>
+          <li> <Link to="/contactus">Contact Us</Link></li>
             <li><a href="#">Portfolio</a></li>
           </ul>
         </div>
@@ -34,6 +35,7 @@ function Navbar() {
             Free consultation <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
+      </div>
       </div>
     </div>
   );

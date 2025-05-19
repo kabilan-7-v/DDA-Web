@@ -24,17 +24,17 @@ function ChooseUs() {
     <div class="ycard1">
           <img src={Bulb} alt='Bulb' />
           <h3>Innovation</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+          <p>Where ideas spark change and technology meets imagination.</p>
         </div>
         <div class="ycard1">
         <img src={Bulb} alt='Bulb' />
-        <h3>Innovation</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+        <h3>Quality-Focused</h3>
+          <p>High-performance solutions built for speed, usability, and cross-device reliability</p>
         </div>
         <div class="ycard1">
         <img src={Bulb} alt='Bulb' />
-        <h3>Innovation</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+        <h3>Value For Money</h3>
+          <p>Premium quality. Fair price. Maximum value.</p>
         </div>
 
         <div className='ycard2'>

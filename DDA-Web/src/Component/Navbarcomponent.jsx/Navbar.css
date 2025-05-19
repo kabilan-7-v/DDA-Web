@@ -14,6 +14,11 @@
   background-color: white;
   position: relative;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+.top{
+  width: 85%;
 }
 
 .topbar-content {

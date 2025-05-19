@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../Component/Navbarcomponent.jsx/Navbar'
 import Abt from '../../Pages/Hompage/Abt'
+import arrow from '../../assets/image/arrow-right.png'; 
 
 import './Homepage.css';
 import Serv from './Serv';
@@ -18,17 +19,16 @@ function Homepage() {
           <div className='banner-content'>
           <p className="p1">About Our Company</p>
         <h1>
-          Web Design, SEO & Internet Marketing For <span>Your Business</span>
+          Make Your Business  <span>Unmissable Online</span>
         </h1>
         <p className="p2">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo veritatis et quasi architecto beatae vitae dicta sunt.
+          We turn clicks into customers with expert design and marketing..
         </p>
         <button className="banner-b1">
-          Free Consultation<i className="fa-solid fa-arrow-right"></i></button>
+          Free Consultation <img src={arrow} alt="Description" /> 
+          </button>
           <button className="banner-b2">
-          View Portfolio<i className="fa-solid fa-arrow-right"></i>
+          View Portfolio <img src={arrow} alt="Description" /> 
         </button>
 
           </div>

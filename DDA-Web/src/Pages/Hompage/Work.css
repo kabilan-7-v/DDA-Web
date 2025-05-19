@@ -18,80 +18,81 @@
     width: 85%;
 }
 .work-head {
-  width: 100%;
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  height: 230px;
-}
-
-@media (max-width: 768px) {
-  .work-head {
-    flex-direction: column;
-    
-    
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 230px;
   }
-}
-
-.work-headcontent {
-  flex: 1;
-}
-
-.work-p1 {
-  font-size: 22px;
-  font-weight: 500;
-  color: var(--blue);
-}
-
-@media (max-width: 1024px) {
+  
+  @media (max-width: 768px) {
+    .work-head {
+      flex-direction: column;
+      height: 250px;
+      
+      
+    }
+  }
+  
+  .work-headcontent {
+    flex: 1;
+  }
+  
   .work-p1 {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--blue);
   }
-}
-
-@media (max-width: 768px) {
-  .work-p1 {
-    font-size: 18px;
+  
+  @media (max-width: 1024px) {
+    .work-p1 {
+      font-size: 20px;
+    }
   }
-}
-
-.work-h1 {
-  font-size: 4.5vw;
-  margin-top: 20px;
-}
-
-@media (max-width: 768px) {
+  
+  @media (max-width: 768px) {
+    .work-p1 {
+      font-size: 18px;
+    }
+  }
+  
   .work-h1 {
-    font-size: 8vw;
-  }
-}
-
-.work-b1 {
-  margin-top: 100px;
-}
-
-@media (max-width: 768px) {
-  .work-b1 {
+    font-size: 4.5vw;
     margin-top: 20px;
   }
-}
-
-.work-b1 button {
-  padding: 10px 20px;
-  border-radius: 100px; 
-  border: none;
-  color: white;
-  background-color: var(--blue);
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.work-b1 img{
-  margin-top: -10px;
-  margin-bottom: -5px;
-}
+  
+  @media (max-width: 768px) {
+    .work-h1 {
+      font-size: 8vw;
+    }
+  }
+  
+  .work-b1 {
+    margin-top: 100px;
+  }
+  
+ @media (max-width: 768px) {
+    .work-b1 {
+      margin-top: 20px;
+    }
+  }
+  
+  .work-b1 button {
+    padding: 10px 20px;
+    border-radius: 100px; 
+    border: none;
+    color: white;
+    background-color: var(--blue);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .work-b1 img{
+    margin-top: -10px;
+    margin-bottom: -5px;
+  }
   .work-card{
     margin-top: 50px;
     display: flex;
