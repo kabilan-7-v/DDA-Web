@@ -78,7 +78,7 @@
 
 .package1{
   width: 330px;
-  height: 300px;
+  height: auto;
   border-radius: 30px;
   background-color:var(--lightblue);
   padding: 30px;
@@ -135,7 +135,7 @@ line-height: 50px;
 
 .package2{
   width: 330px;
-  height: 300px;
+  height: auto;
   border-radius: 30px;
   background-color:var(--blue);
   padding: 30px;
@@ -187,4 +187,23 @@ line-height: 50px;
 }
 .pack-info2 p {
     font-size: 16px;
+}
+.pack-button {
+  margin-top: auto;
+  text-align: center;
+}
+
+.pack-button button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.pack-button button:hover {
+  background-color: #0056b3;
 }

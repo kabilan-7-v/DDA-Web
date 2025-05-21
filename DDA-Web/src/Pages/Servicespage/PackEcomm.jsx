@@ -1,123 +1,116 @@
-import React from 'react'
-import './PackEcomm.css'
+import React, { useState } from 'react';
+import './PackEcomm.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import { faIndianRupee} from '@fortawesome/free-solid-svg-icons';
-
-
-
-
-
+import { faCircleCheck, faIndianRupee } from '@fortawesome/free-solid-svg-icons';
+import { useLocation } from "react-router-dom";
 
 function PackEcomm() {
+  const location = useLocation();
+  const [showPopup, setShowPopup] = useState(false);
+  const [email, setEmail] = useState('');
+  const [otpSent, setOtpSent] = useState(false);
+  const [otp, setOtp] = useState('');
+  const [isVerified, setIsVerified] = useState(false);
+
+  const handleChoose = () => {
+    setShowPopup(true);
+  };
+
+  const handleSendOTP = () => {
+    if (email.trim() === '') return alert("Please enter a valid email");
+    setOtpSent(true);
+    // In a real app, send OTP to email via backend here
+    console.log(`OTP sent to ${email}`);
+  };
+
+  const handleVerifyOTP = () => {
+    if (otp === '1234') { // Dummy OTP
+      setIsVerified(true);
+    } else {
+      alert("Invalid OTP");
+    }
+  };
+
   return (
     <>
-    <div className='ecomm-price'>
-       <div className="package">
-      <div class="container package-head ">
-        <div class="package-headcontent">
-          <p class="package-p1">Your Choice</p>
-          <h1 class="package-h1">
-            Select engagement models 
-            of  your choice
-          </h1>
+      <div className='ecomm-price'>
+        <div className="package">
+          <div className="container package-head">
+            <div className="package-headcontent">
+              <p className="package-p1">Your Choice</p>
+              <h1 className="package-h1">Select engagement models of your choice</h1>
+            </div>
+          </div>
+
+          <div className="container package-card">
+            {/* Sample package with button */}
+            <div className="package1">
+              <div className="package1-top"><h3>Basic Package</h3></div>
+              <hr />
+              <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 14,999</h1></div>
+              <div><p>Perfect for startups and small businesses</p></div>
+              <div className="pack-info">
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Static page</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Basic contact form</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting support 1 Month</p>
+              </div>
+              <div className="pack-button">
+                <button onClick={handleChoose}>Choose Basic</button>
+              </div>
+            </div>
+          </div>
         </div>
-        
       </div>
 
-      <div class="container package-card">
-        <div class="package1">
-          <div class="package1-top">
-            <h3>Basic Package</h3>
-            
-          </div>
-          <hr />
-          <div>
-            <h1>
-             <FontAwesomeIcon icon={faIndianRupee} />  14,999
-            </h1>
-          </div>
-          <div>
-            <p>Perfect for startups and small businesses</p>
-          </div>
-          <div class="pack-info">
-            <p><FontAwesomeIcon icon={faCircleCheck} /> Static page</p>
-            <p><FontAwesomeIcon icon={faCircleCheck} /> Basic contact form</p>
-            <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting support 1 Month</p>
-            
+      {/* Email + OTP + Pay Popup */}
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-content">
+            {!otpSent && !isVerified && (
+              <>
+                <h3>Enter your Email</h3>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="your@email.com"
+                />
+                <button onClick={handleSendOTP}>Send OTP</button>
+              </>
+            )}
 
+            {otpSent && !isVerified && (
+              <>
+                <h3>Enter OTP</h3>
+                <input
+                  type="text"
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                  placeholder="Enter OTP"
+                />
+                <button onClick={handleVerifyOTP}>Verify</button>
+              </>
+            )}
+
+            {isVerified && (
+              <>
+                <h3>Email Verified!</h3>
+                <button onClick={() => alert('Proceed to Payment')}>Pay</button>
+              </>
+            )}
+
+            <button className="close-btn" onClick={() => {
+              setShowPopup(false);
+              setEmail('');
+              setOtp('');
+              setOtpSent(false);
+              setIsVerified(false);
+            }}>X</button>
           </div>
-        
-          
-        
         </div>
-
-        <div class="package2">
-          <div class="package2-top">
-            <h3>Standard Package</h3>
-            
-          </div>
-          <hr />
-          <div>
-            <h1>
-             <FontAwesomeIcon icon={faIndianRupee} />  29,999
-            </h1>
-          </div>
-          <div>
-            <p>Ideal for growing brands</p>
-          </div>
-          <div class="pack-info2">
-            <p><FontAwesomeIcon icon={faCircleCheck} /> Dynamic</p>
-            <p><FontAwesomeIcon icon={faCircleCheck} /> Advanced contact form</p>
-            <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting support 3 Month</p>
-            
-
-          </div>
-          
-        
-          
-        
-        </div>
-
-        <div class="package1">
-          <div class="package1-top">
-            <h3>Premium Package</h3>
-            
-          </div>
-          <hr />
-          <div>
-            <h1>
-             <FontAwesomeIcon icon={faIndianRupee} /> 59,999
-            </h1>
-          </div>
-          <div>
-            <p>For established businesses aiming for a premium experience</p>
-          </div>
-          <div class="pack-info">
-            <p><FontAwesomeIcon icon={faCircleCheck} /> Full-stack w/ Admin</p>
-            <p><FontAwesomeIcon icon={faCircleCheck} /> Integration + API</p>
-            <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting support 6 Month</p>
-
-          </div>
-        
-          
-        
-        </div>
-
-        
-
-        
-
-        
-      </div>
-      
-    </div>
-
-    </div>
-
-
+      )}
     </>
-  )
+  );
 }
 
-export default PackEcomm
+export default PackEcomm;

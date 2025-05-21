@@ -8,6 +8,7 @@ import Serv from './Serv';
 import Work from './Work'
 import ChooseUs from './ChooseUs'
 import Footer from './Footer'
+import CategoryForm from '../../Component/Navbarcomponent.jsx/CategoryForm';
 
 function Homepage() {
   return (
@@ -37,6 +38,7 @@ function Homepage() {
         
       <Abt></Abt>
       <Serv></Serv>
+
       <Work></Work>
       <ChooseUs></ChooseUs>
       <Footer></Footer>
