@@ -25,7 +25,6 @@ function Serv() {
               </button>
             </div>
           </div>
-          <CategoryForm />
           <div className="ser-card">
             <a href="/webdevelopment">
               <div className="scard1">

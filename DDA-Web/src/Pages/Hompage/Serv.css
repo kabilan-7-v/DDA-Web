@@ -4,7 +4,7 @@
 }
 .ser {
     width: 100%;
-    min-height: 200vh; /* full screen height if needed */
+    min-height: 150vh; /* full screen height if needed */
   height: auto;  
     background-color: var(--lightblue);
     display: flex;

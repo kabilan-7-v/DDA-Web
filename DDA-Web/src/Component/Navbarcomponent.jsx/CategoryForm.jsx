@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useDispatch } from 'react-redux';
+import { hidePopup } from '../../Pages/features/popupSlice';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from 'axios';
@@ -79,7 +81,7 @@ const CategoryForm = () => {
   const [subCategory, setSubCategory] = useState("");
   const [selectedPackage, setSelectedPackage] = useState("");
   const [otp, setOtp] = useState(null);
-
+  const dispatch = useDispatch();
   const generateOtp = () => {
     return Math.floor(100000 + Math.random() * 900000);
   };
@@ -134,11 +136,13 @@ const handlePayment = async (amount) => {
           }
         });
         
-        alert('Payment successful');
+        toast.success('Payment successful');
+        dispatch(hidePopup())
       } else {
       
        
-        alert('Payment verification failed');
+        toast.error('Payment verification failed');
+        dispatch(hidePopup())
       }
     },
     prefill: {
@@ -211,7 +215,7 @@ const handlePayment = async (amount) => {
     <>
       <div
         style={{
-          maxWidth: 1200,
+          maxWidth: 1300,
           margin: "2rem auto",
           marginTop:80,
           padding: "2rem",
@@ -220,11 +224,29 @@ const handlePayment = async (amount) => {
           boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
           display: "flex",
           gap: 40,
-          flexWrap: "wrap",
           fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
           color: "#333",
+          position: "relative",
+
+          
         }}
-      >
+      >   <button
+      onClick={() => dispatch(hidePopup())}
+      style={{
+        position: "absolute",
+        top: 10,
+        right: 20,
+        border: "none",
+        background: "transparent",
+        fontSize: 34,
+        cursor: "pointer",
+        color: "#999",
+      }}
+      aria-label="Close form"
+      title="Close form"
+    >
+      &times;
+    </button>
         {/* Left Side: User Info */}
         <div style={{ flex: "1 1 300px", minWidth: 280 }}>
           <h2 style={{ marginBottom: "1.5rem", color: "#007bff" }}>👤 Your Details</h2>
