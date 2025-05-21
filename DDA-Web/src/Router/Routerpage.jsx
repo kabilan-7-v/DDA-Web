@@ -9,6 +9,7 @@ import Sevicespage from "../Pages/Servicespage/Sevicespage";
 import WebDevelopment from "../Pages/Servicespage/WebDevelopment";
 import Ecommerce from "../Pages/Servicespage/Ecommerce";
 import Phoneverfications from "../firebase/Phoneverfications";
+import Portfoliopage from "../Pages/Portfolio/Portfoliopage";
 
 function Routerpage() {
   return (
@@ -20,6 +21,8 @@ function Routerpage() {
         <Route path="/webdevelopment" element={<WebDevelopment></WebDevelopment>} ></Route>
         <Route path="/ecommerce" element={<Ecommerce></Ecommerce>} ></Route>
         <Route path="/contactus" element={<Contactpage></Contactpage>} ></Route>
+        <Route path="/portfolio" element={<Portfoliopage></Portfoliopage>} ></Route>
+
 
       </Routes>
     </BrowserRouter>

@@ -26,7 +26,7 @@ function Navbar() {
           <li> <Link to="/aboutus">About us</Link></li>
           <li> <Link to="/services">Services</Link></li>
           <li> <Link to="/contactus">Contact Us</Link></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><Link to="/portfolio" > Portfolio</Link></li>
           </ul>
         </div>
 

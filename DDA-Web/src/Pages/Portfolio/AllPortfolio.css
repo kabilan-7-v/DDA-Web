@@ -1,0 +1,87 @@
+.all-port-container{
+    width: 100%;
+    height: 1400px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1024px) {
+    .all-port-container {
+      height: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .all-port-container {
+      height: auto;
+    }
+  }
+.all-port-sec{
+    width: 85%;
+}
+
+  .all-portfolio-card{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pcard1{
+    width: 45%;
+    height: 580px;
+    background-color: var(--lightblue);
+    border-radius: 40px;
+    padding: 20px ;
+    margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+    .pcard1 {
+      height: auto;
+    }
+  }
+@media (max-width: 768px) {
+    .pcard1 {
+      width: 100%;
+      height: auto;
+    }
+  }
+.all-portfolio-image{
+    
+    overflow: hidden;
+    border-radius: 20px;
+}
+.our-all-portfolio-image{
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+@media (max-width: 1024px) {
+  .our-all-portfolio-image {
+    
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-all-portfolio-image {
+    
+    height: auto;
+  }
+}
+
+.our-all-portfolio-image img{
+  width: 100%;
+  height: auto;
+ transition: transform 0.9s ease;
+}
+
+.pcard1:hover .all-portfolio-image img{
+  transform: scale(1.1);
+}
+
+.all-portfolio-image h3{
+margin-top: 24px;
+}
+.all-portfolio-image p{
+    margin-top: 20px;
+  color: rgb(151, 151, 151);
+}
+

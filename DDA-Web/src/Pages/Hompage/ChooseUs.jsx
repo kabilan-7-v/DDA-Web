@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Bulb from '../../assets/image/bulb.png'
+import Quality from '../../assets/image/quality.png'
+import Money from '../../assets/image/Money.png'
 import World from '../../assets/image/world.png'
 
 function ChooseUs() {
@@ -27,12 +29,12 @@ function ChooseUs() {
           <p>Where ideas spark change and technology meets imagination.</p>
         </div>
         <div class="ycard1">
-        <img src={Bulb} alt='Bulb' />
+        <img src={Quality} alt='Quality' />
         <h3>Quality-Focused</h3>
           <p>High-performance solutions built for speed, usability, and cross-device reliability</p>
         </div>
         <div class="ycard1">
-        <img src={Bulb} alt='Bulb' />
+        <img src={Money} alt='Money' />
         <h3>Value For Money</h3>
           <p>Premium quality. Fair price. Maximum value.</p>
         </div>

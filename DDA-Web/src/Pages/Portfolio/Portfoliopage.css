@@ -1,0 +1,30 @@
+.portfolio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.port1{
+    width: 85%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.port1 ul{
+    list-style: none;
+}
+.port1 button{
+    padding: 10px 20px;
+    background-color:var(--lightblue);
+    border: none;
+    border-radius: 100px;
+    margin-left: 25px;
+    transition: background-color 0.3s ease;
+    
+}
+.port1 button:hover{
+    background-color: var(--blue);
+    color: white;
+    transition: background-color 0.3s ease;
+}
