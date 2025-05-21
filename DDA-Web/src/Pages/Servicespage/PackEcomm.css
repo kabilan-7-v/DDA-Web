@@ -1,0 +1,209 @@
+.ecomm-price{
+    width: 100%;
+    height: 800px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1024px) {
+  .ecomm-price {
+    height:auto;
+  }
+}
+@media (max-width: 768px) {
+  .ecomm-price {
+    height: auto;
+  }
+}
+.pacakage{
+    width: 85%;
+  
+}
+@media (max-width: 1024px) {
+  .package {
+    height:auto;
+  }
+}
+@media (max-width: 768px) {
+  .package {
+    width: 80%;
+    height: auto;
+  }
+}
+.package-head{
+    
+  background-color:transparent;
+  display: flex;
+  align-items: center;
+  height: 250px;
+
+}
+.package-headcontent{
+    width: 80%;
+    margin-top: 100px;
+}
+
+.package-p1{
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--blue);
+  background-color: transparent;
+}
+@media (max-width: 1024px) {
+  .package-p1 {
+    font-size:20px ;
+  }
+}
+@media (max-width: 768px) {
+  .package-p1 {
+      font-size:18px ;
+  }
+}
+.package-h1{
+  font-size: 4.5vw;
+  background-color: transparent;
+}
+
+
+.package-card{
+ 
+  margin-top: 80px;
+  display:flex ;
+  justify-content: space-around;
+  
+  padding: 0;
+  flex-wrap: wrap;
+  
+}
+
+.package1{
+  width: 330px;
+  height: auto;
+  border-radius: 30px;
+  background-color:var(--lightblue);
+  padding: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  
+  
+}
+@media (max-width: 1024px) {
+.package1{
+  width: 300px;
+  height: 350;
+ 
+}
+}
+@media (max-width: 768px) {
+.package1 {
+  width: 400px;
+  height: auto;
+  
+}
+}
+.package1 h1{
+  font-size: 2.9vw;
+  color: var(--blue);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pack-info{
+text-align:left;
+line-height: 50px;
+}
+
+.package1 h5{
+  font-size:20px;
+}
+.package1 .fa-solid{
+  color: var(--blue);
+}
+.package1-top h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.pack-info p svg {
+  color:var(--blue);
+}
+.package1 h5 svg {
+  color:var(--blue);
+}
+.pack-info p {
+    font-size: 16px;
+}
+
+
+.package2{
+  width: 330px;
+  height: auto;
+  border-radius: 30px;
+  background-color:var(--blue);
+  padding: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  
+  
+}
+@media (max-width: 1024px) {
+.package2{
+  width: 300px;
+  height: 350;
+ 
+}
+}
+@media (max-width: 768px) {
+.package2 {
+  width:400px;
+  height: auto;
+  
+}
+}
+.package2 h1{
+  font-size: 2.9vw;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pack-info2{
+text-align:left;
+line-height: 50px;
+}
+
+.package2 h5{
+  font-size:20px;
+}
+
+.package2-top h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+.pack-info2 p svg {
+  color:white;
+}
+.package2 h5 svg {
+  color:white;
+}
+.pack-info2 p {
+    font-size: 16px;
+}
+.pack-button {
+  margin-top: auto;
+  text-align: center;
+}
+
+.pack-button button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.pack-button button:hover {
+  background-color: #0056b3;
+}

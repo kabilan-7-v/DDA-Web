@@ -26,7 +26,7 @@ const RazorpayCheckout = () => {
       key: 'rzp_live_amqPFi6ouaxEqd', // Replace with Razorpay key
       amount: order.amount,
       currency: order.currency,
-      name: 'Your Company',
+      name: 'DesignDot Acadamey',
       description: 'Test Transaction',
       order_id: order.id,
       handler: async function (response) {

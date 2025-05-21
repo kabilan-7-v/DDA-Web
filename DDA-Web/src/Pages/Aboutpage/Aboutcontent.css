@@ -113,15 +113,11 @@
   }
   }
   .about-ab-content-p1{
-    font-size: 1.1vw;
+    font-size: 18px;
     color: rgb(151, 151, 151);
     margin-top: 20px;
   }
-  @media (max-width: 768px) {
-  .about-ab-content-p1 {
-     font-size: 1.8vw; 
-  }
-  }
+  
   
   .about-ab-b1{
     padding: 10px 20px;

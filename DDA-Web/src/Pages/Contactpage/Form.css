@@ -1,0 +1,113 @@
+
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+    .container-cp {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    @media (max-width: 768px) {
+      .container-cp {
+        flex-direction: column;
+      }
+
+      .image-section {
+        order: -1;
+      }
+    }
+    .contact-form {
+      background: #fff;
+      padding: 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 30%;
+      
+    }
+        @media (max-width: 768px) {
+      .contact-form {
+        width: 86%;
+        
+      }
+
+      
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .image-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      min-width: 300px;
+    }
+
+    .image-section img {
+      width: 100%;
+      
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .form-group button{
+        width: 30%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .form-group button {
+      background-color:var(--blue);
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+
+    .btn-secondary {
+      background-color: #007BFF;
+    }
+
+    .btn-secondary:hover {
+      background-color: #0056b3;
+    }
+    .form-textarea{
+      margin-bottom: 15px;
+
+    }
+     .form-textarea input{
+      height: 100px;
+      
+    }

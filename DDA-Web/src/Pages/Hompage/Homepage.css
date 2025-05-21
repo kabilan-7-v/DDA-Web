@@ -8,7 +8,7 @@ body, .banner-content, h1, p, button {
   }
   
 .banner{
-    height: 800px;
+    height: 550px;
     background-size: cover;
     background-image: url(https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/05/hero-banner.jpg);
     background-attachment: fixed;
@@ -32,12 +32,12 @@ body, .banner-content, h1, p, button {
 .p1{
  color: var(--blue);
  background-color: transparent;
- font-size: 24px;
+ font-size: 20px;
  font-weight: 500;
 }
 .banner-content h1{
     background-color: transparent;
-    font-size:6.5vw;
+    font-size:5.5vw;
     color: white;
 }
 
@@ -49,15 +49,34 @@ body, .banner-content, h1, p, button {
     background-color: transparent;
     color: white;
     font-size: 20px;
+    margin-bottom: 20px;
 }
-.banner-b1,.banner-b2{
+.banner-b1{
     padding: 10px 20px;
-    border-radius: 100px;
+    border-radius: 100px; 
     border: none;
     color: white;
     background-color: var(--blue);
-    margin-right: 30px;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 50px;
+    cursor: pointer;
+}
+.banner-b1 img{
+    margin-top: -15px;
+    margin-bottom: -5px;
+}
+.banner-b2{
+ padding: 10px 20px;
+    border-radius: 100px; 
+    border: none;
+    color: white;
+    background-color: var(--blue);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.banner-b2 img{
+    margin-top: -15px;
+    margin-bottom: -5px;
 }
