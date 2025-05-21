@@ -3,6 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #e0e7ff, #f3e8ff);
 
+
   }
   
   .form-container {
@@ -12,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+   
   }
   
   .form-box {

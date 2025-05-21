@@ -5,7 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Bulb from '../../assets/image/bulb.png'
 import Quality from '../../assets/image/quality.png'
-import Money from '../../assets/image/Money.png'
+import Money from '../../assets/image/money.png'
 import World from '../../assets/image/world.png'
 
 function ChooseUs() {

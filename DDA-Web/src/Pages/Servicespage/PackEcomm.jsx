@@ -58,57 +58,39 @@ function PackEcomm() {
                 <button onClick={handleChoose}>Choose Basic</button>
               </div>
             </div>
+            <div className="package1">
+              <div className="package1-top"><h3>Basic Package</h3></div>
+              <hr />
+              <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 14,999</h1></div>
+              <div><p>Perfect for startups and small businesses</p></div>
+              <div className="pack-info">
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Static page</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Basic contact form</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting support 1 Month</p>
+              </div>
+              <div className="pack-button">
+                <button onClick={handleChoose}>Choose Basic</button>
+              </div>
+            </div><div className="package1">
+              <div className="package1-top"><h3>Basic Package</h3></div>
+              <hr />
+              <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 14,999</h1></div>
+              <div><p>Perfect for startups and small businesses</p></div>
+              <div className="pack-info">
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Static page</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Basic contact form</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting support 1 Month</p>
+              </div>
+              <div className="pack-button">
+                <button onClick={handleChoose}>Choose Basic</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Email + OTP + Pay Popup */}
-      {showPopup && (
-        <div className="popup-overlay">
-          <div className="popup-content">
-            {!otpSent && !isVerified && (
-              <>
-                <h3>Enter your Email</h3>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="your@email.com"
-                />
-                <button onClick={handleSendOTP}>Send OTP</button>
-              </>
-            )}
-
-            {otpSent && !isVerified && (
-              <>
-                <h3>Enter OTP</h3>
-                <input
-                  type="text"
-                  value={otp}
-                  onChange={(e) => setOtp(e.target.value)}
-                  placeholder="Enter OTP"
-                />
-                <button onClick={handleVerifyOTP}>Verify</button>
-              </>
-            )}
-
-            {isVerified && (
-              <>
-                <h3>Email Verified!</h3>
-                <button onClick={() => alert('Proceed to Payment')}>Pay</button>
-              </>
-            )}
-
-            <button className="close-btn" onClick={() => {
-              setShowPopup(false);
-              setEmail('');
-              setOtp('');
-              setOtpSent(false);
-              setIsVerified(false);
-            }}>X</button>
-          </div>
-        </div>
-      )}
+     
+      
     </>
   );
 }
