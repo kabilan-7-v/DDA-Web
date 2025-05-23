@@ -16,15 +16,15 @@ function AppPrice() {
       link: '/webdevelopment'
     },
     {
-      title: 'App Development',
+      title: 'Branding Design',
       description: 'Smart, user-friendly mobile applications for Android and iOS platforms.',
-      image: 'https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg',
-      link: '/app-price'
+      image: 'https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-5.jpg',
+      link: 'branding-price'
     },
     {
       title: 'Graphic Design',
-      description: 'Compelling visuals and marketing materials that reflect your brand identity.',
-      image: 'https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg',
+      description: ' Strategic brand building from logos to complete identity systems.',
+      image: 'https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-3.jpg',
       link: '/graphic'
     }
   ];
