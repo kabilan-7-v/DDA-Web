@@ -32,9 +32,9 @@ function Abt() {
 
                 To be a leading force in design and digital innovation, fostering creativity and delivering impactful solutions that make a difference.
               </p>
-              <button className="about-b1">
+              {/* <button className="about-b1">
                 Free Consultation <i className="fa-solid fa-arrow-right"></i>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
