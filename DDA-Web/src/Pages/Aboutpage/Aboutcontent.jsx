@@ -15,20 +15,22 @@ function Aboutcontent() {
           <div className="about-ab-content">
             
             <div className="para-ab">
-              <p className="about-ab-p1">About Company</p>
-                <h1 className="about-ab-h1">
-                    Websites that tell your<br />
-                    brand's story
-                </h1>
+              <p className="about-ab-p1">About</p>
+                <h2 className="about-ab-h1">
+                    DesignDot Academy Private Limited
+                </h2>
               <p class="about-ab-content-p1">
                 
                 
-                At DesignDot Acadamy, we specialize in building dynamic, user-friendly, and performance-driven web solutions that empower businesses to succeed online. Our team is made up of passionate developers, designers, and strategists who collaborate closely to turn your vision into a fully functional and engaging digital experience.<br /><br />
+                DesignDot Academy Private Limited is a forward-thinking digital solutions company dedicated to bridging creativity, technology, and strategy. Founded with the mission to empower businesses and individuals through design and innovation, we offer a comprehensive range of services tailored to meet modern digital needs.<br /><br />
+                <h4>Leadership:</h4>
 
-                We offer a wide range of services, including custom website development, web application design, e-commerce platforms, CMS integration, and responsive UI/UX design. Every solution we create is tailored to meet the specific needs of our clients, ensuring that each project not only looks great but also performs seamlessly across all devices and platforms.<br /><br />
+                Mr. Vimal Viswanathan, Founder & Director, is the visionary behind DesignDot Academy. With a deep passion for design and education, he has been instrumental in shaping the company’s creative and strategic direction.<br /><br />
 
-                What sets us apart is our commitment to quality, innovation, and long-term client relationships. We follow a transparent and agile development process, keeping you involved at every stage. Whether you're launching a new idea or upgrading an existing platform, we’re here to deliver reliable, scalable, and future-ready web solutions that support your business goals.
-                
+                Mr. Krishna Shankar, Director & Investor, brings valuable business insight and strategic investment expertise, driving growth and sustainability for the organization.<br /><br />
+                <h4>Our Vision:</h4>
+
+                To be a leading force in design and digital innovation, fostering creativity and delivering impactful solutions that make a difference.
               </p>
               <button className="about-ab-b1">
                 Free-consultation

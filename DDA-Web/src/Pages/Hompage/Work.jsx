@@ -5,7 +5,7 @@ import arrow from '../../assets/image/arrow-right.png';
 function wrk() {
   return (
     <>
-    <div className='wrk-container'>
+    {/* <div className='wrk-container'>
         <div className='wrk-sec'>
         <div class="work-head">
           <div class="work-headcontent">
@@ -70,7 +70,7 @@ function wrk() {
 
         </div>
 
-    </div>
+    </div> */}
     </>
   )
 }

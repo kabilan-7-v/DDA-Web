@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom';
 function Ecommerce() {
   return (
     <>
-    <Navbar></Navbar>
+    {/* <Navbar></Navbar>
     {/* <div className="banner-ec">
     
               <img src={Ecomm} />
@@ -35,7 +35,7 @@ function Ecommerce() {
               <button className="banner-ec-b1"> <Link to="/" >Home</Link> / <Link to="/services" >Services</Link> / <Link to="/webdevelopment" >Web Development</Link> / E-Commerce</button>
             </div>
           </div> */}
-        <div className='ab-ec'>
+        {/* <div className='ab-ec'>
           <div className="about-ec p-0">
         <div className="container about-ec-image p-0">
           <div className="image-ec">
@@ -68,7 +68,7 @@ function Ecommerce() {
 <ChooseUs></ChooseUs>
 <PackEcomm></PackEcomm>
 <Relatedservices></Relatedservices>
-<Footer></Footer>
+<Footer></Footer> */}
 
 
 

@@ -45,44 +45,52 @@ function PackEcomm() {
           <div className="container package-card">
             {/* Sample package with button */}
             <div className="package1">
-              <div className="package1-top"><h3>Basic Package</h3></div>
+              <div className="package1-top"><h3>Basic Website</h3></div>
               <hr />
-              <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 14,999</h1></div>
+              <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 12,999</h1></div>
               <div><p>Perfect for startups and small businesses</p></div>
               <div className="pack-info">
-                <p><FontAwesomeIcon icon={faCircleCheck} /> Static page</p>
-                <p><FontAwesomeIcon icon={faCircleCheck} /> Basic contact form</p>
-                <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting support 1 Month</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Up to 5 Static page</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Responsive Design</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Contact Form</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Basic SEO</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Delivery in 7 Days</p>
               </div>
               <div className="pack-button">
                 <button onClick={handleChoose}>Choose Basic</button>
               </div>
             </div>
-            <div className="package1">
-              <div className="package1-top"><h3>Basic Package</h3></div>
+            <div className="package2">
+              <div className="package2-top"><h3>Standard Website</h3></div>
               <hr />
-              <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 14,999</h1></div>
+              <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 29,999</h1></div>
               <div><p>Perfect for startups and small businesses</p></div>
-              <div className="pack-info">
-                <p><FontAwesomeIcon icon={faCircleCheck} /> Static page</p>
-                <p><FontAwesomeIcon icon={faCircleCheck} /> Basic contact form</p>
-                <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting support 1 Month</p>
+              <div className="pack-info2">
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Up to 10 Static page</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Dynamic CMS (WordPress/Custom)</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Blog Integration</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Basic On-Page SEO</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> WhatsApp/Email Integration</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Delivery in 12–15 Days</p>
               </div>
               <div className="pack-button">
-                <button onClick={handleChoose}>Choose Basic</button>
+                <button onClick={handleChoose}>Choose Standard</button>
               </div>
             </div><div className="package1">
-              <div className="package1-top"><h3>Basic Package</h3></div>
+              <div className="package1-top"><h3>Premium Website</h3></div>
               <hr />
-              <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 14,999</h1></div>
+              <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 59,999</h1></div>
               <div><p>Perfect for startups and small businesses</p></div>
               <div className="pack-info">
-                <p><FontAwesomeIcon icon={faCircleCheck} /> Static page</p>
-                <p><FontAwesomeIcon icon={faCircleCheck} /> Basic contact form</p>
-                <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting support 1 Month</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Unlimited Pages</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Custom Design & CMS</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> E-Commerce/Payment Gateway</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Advanced SEO & Analytics</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Live Chat, Security Setup</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Delivery in 20–25 Days</p>
               </div>
               <div className="pack-button">
-                <button onClick={handleChoose}>Choose Basic</button>
+                <button onClick={handleChoose}>Premium Basic</button>
               </div>
             </div>
           </div>

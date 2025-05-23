@@ -43,8 +43,7 @@ function Serv() {
 
                 <div>
                   <p>
-                    totam rem aperiam, eaque ipsa quae ab illo inventore et
-                    quasi architecto beatae
+                    Custom, responsive websites that drive performance and visibility
                   </p>
                 </div>
                 <div class="scard1-image">
@@ -52,10 +51,10 @@ function Serv() {
                 </div>
               </div>
             </a>
-            <div className="scard1">
+         <a href="/wdprice"><div className="scard1">
               <div className="scard1-top">
                 <h2>
-                  Digital <br /> Marketing
+                  App <br /> Development
                 </h2>
                 <div class="scard1-btn">
                   <button>
@@ -67,18 +66,17 @@ function Serv() {
 
               <div>
                 <p>
-                  totam rem aperiam, eaque ipsa quae ab illo inventore et quasi
-                  architecto beatae
+                  Smart, user-friendly mobile applications for Android and iOS platforms.
                 </p>
               </div>
               <div class="scard1-image">
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-2.jpg" />
               </div>
-            </div>
-            <div className="scard1">
+            </div></a>
+         <a href="/app-price"><div className="scard1">
               <div className="scard1-top">
                 <h2>
-                  Game <br /> Development
+                  Graphic <br /> Design
                 </h2>
                 <div class="scard1-btn">
                   <button>
@@ -90,19 +88,17 @@ function Serv() {
 
               <div>
                 <p>
-                  totam rem aperiam, eaque ipsa quae ab illo inventore et quasi
-                  architecto beatae
+                  Compelling visuals and marketing materials that reflect your brand identity.
                 </p>
               </div>
               <div class="scard1-image">
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-3.jpg" />
               </div>
-            </div>
-            <div className="scard1">
+            </div></a>
+          <a href="branding-price">  <div className="scard1">
               <div className="scard1-top">
                 <h2>
-                  Mobile App
-                  <br /> Development
+                  UI/UX <br/> Design
                 </h2>
                 <div class="scard1-btn">
                   <button>
@@ -114,18 +110,17 @@ function Serv() {
 
               <div>
                 <p>
-                  totam rem aperiam, eaque ipsa quae ab illo inventore et quasi
-                  architecto beatae
+                  Seamless and engaging user experiences across web and mobile platforms.
                 </p>
               </div>
               <div class="scard1-image">
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-4.jpg" />
               </div>
-            </div>
+            </div></a>
             <div className="scard1">
               <div className="scard1-top">
                 <h2>
-                  Networking <br /> Services
+                  Branding <br/>Design
                 </h2>
                 <div class="scard1-btn">
                   <button>
@@ -137,8 +132,7 @@ function Serv() {
 
               <div>
                 <p>
-                  totam rem aperiam, eaque ipsa quae ab illo inventore et quasi
-                  architecto beatae
+                  Strategic brand building from logos to complete identity systems.
                 </p>
               </div>
               <div class="scard1-image">
@@ -148,7 +142,7 @@ function Serv() {
             <div className="scard1">
               <div className="scard1-top">
                 <h2>
-                  Graphics <br /> Design
+                  Customized <br/> Products
                 </h2>
                 <div class="scard1-btn">
                   <button>
@@ -160,8 +154,7 @@ function Serv() {
 
               <div>
                 <p>
-                  totam rem aperiam, eaque ipsa quae ab illo inventore et quasi
-                  architecto beatae
+                  Bespoke digital and physical solutions to suit your specific business goals.
                 </p>
               </div>
               <div class="scard1-image">

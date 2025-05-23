@@ -1,0 +1,156 @@
+.p1{
+ color: var(--blue);
+ background-color: transparent;
+ font-size: 24px;
+ font-weight: 500;
+}
+.banner-br-content h1{
+    font-size:6vw;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.banner-br-content span{
+    color: var(--blue);
+    background-color: transparent;
+}
+.p2{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+.banner-br-b1{
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    color:white;
+    
+    background-color:var(--blue);
+    margin-left: 30px;
+    font-size: 16px;
+    
+}
+.banner-br-b1 a{
+    color:white;
+    text-decoration: none;
+}
+.ab-br{
+    display: flex;
+    justify-content: center;
+}
+.about-br{
+    width: 85%;
+    height: 800px;
+    margin-top: 100px;
+    flex-wrap: wrbr;
+
+}
+@media (max-width: 1024px) {
+.about-br {
+  height: auto;
+}
+}
+@media (max-width: 768px) {
+.about-br {
+  height: auto;
+}
+}
+
+.about-br-p1{
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+.about-br-p1 {
+  font-size:18px ;
+}
+}
+@media (max-width: 768px) {
+.about-br-p1 {
+    font-size:18px ;
+}
+}
+.about-br-h1{
+  font-size: 3.5vw;
+  margin-bottom: 20px;
+  
+}
+
+.about-br-image{
+  width: 100%;
+  height: 700px;
+  display: flex;
+}
+@media (max-width: 768px) {
+.about-br-image {
+    height: auto;
+    display: block;
+}
+}
+.image-br{
+  width: 50%;
+  height:700px;
+  
+  display: flex;
+  align-items: center;
+  
+  
+}
+@media (max-width: 1024px) {
+.image-br {
+  height: auto;
+}
+}
+@media (max-width: 768px) {
+.image-br {
+  width: 100%;
+  
+    
+}
+}
+
+.image-br img{
+  width: 85%;
+  border-radius: 50px;
+}
+@media (max-width: 768px) {
+.image-br img {
+  width: 100%;
+    margin-top: 50px;
+    margin-bottom: -150px;
+    
+}
+}
+.about-br-content{
+  width: 50%;
+  height:700px;
+  display: flex;
+  align-items: center;
+  
+}
+@media (max-width: 768px) {
+.about-br-content {
+    width: 100%; 
+    margin-bottom: -100px;
+    height: 900px;
+}
+}
+.about-br-content-p1{
+  font-size: 16px;
+  color: rgb(151, 151, 151);
+  line-height: 22px;
+}
+
+
+.about-br-b1{
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  background-color: var(--blue);
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}

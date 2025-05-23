@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import banner from '../../assets/image/Temp-banner.jpg'; 
 import ChooseUs from '../../Pages/Hompage/ChooseUs.jsx';
 import Footer from '../../Pages/Hompage/Footer.jsx';
+import PackEcomm from '../../Pages/Servicespage/PackEcomm.jsx';
 
 
 
@@ -33,7 +34,7 @@ function WebDevelopment() {
       <div className='servs01'>
 
     <div className='ser01-card'>
-      <a href='/ecommerce'>
+     
        <div className='scard01'>
             <div className='scard01-top'>
             <h2>E- <br />Commerce</h2>
@@ -55,7 +56,7 @@ function WebDevelopment() {
             </div>
     
         </div>
-        </a>
+       
         <div className='scard01'>
             <div className='scard01-top'>
             <h2>Business <br /> Website</h2>
@@ -168,6 +169,7 @@ function WebDevelopment() {
       </div>
 
 </div>
+          <PackEcomm></PackEcomm>
           <ChooseUs></ChooseUs>
           <Footer></Footer>
     </>

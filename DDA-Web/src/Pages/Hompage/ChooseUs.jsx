@@ -41,8 +41,7 @@ function ChooseUs() {
 
         <div className='ycard2'>
           <div className='ycard2-h1' >
-          <h1>Do you want to explore<br />
-          our outstanding work?</h1>
+          <h1>Where design meets <br/> innovation.</h1>
           <div className='world'>
           <img src={World} alt='Bulb' />
           </div>
@@ -50,6 +49,7 @@ function ChooseUs() {
           </div>
           
           <p>At DesignDot Acadamy, we create innovative, user-focused web solutions that <br /> combine sleek design with powerful functionality—helping businesses grow and <br /> stand out in the digital world.</p>
+          <h4>Let’s build the future—together.</h4>
           <div className="ycard2-b1">
       <button>
         
