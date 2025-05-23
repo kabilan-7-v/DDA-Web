@@ -7,7 +7,7 @@
 }
 .related{
     width: 85%;
-    height: 900px;
+    height: 950px;
 }
 
 @media (max-width: 1024px) {
@@ -106,7 +106,7 @@
 
   .rcard1{
     width: 400px;
-  height: 350px;
+  height: 400px;
   border-radius: 30px;
   background-color: white;
   padding: 30px;
