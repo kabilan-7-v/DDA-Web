@@ -1,10 +1,10 @@
 .servs{
-    width: 85%;
+    width: 80%;
     
 }
 .ser {
     width: 100%;
-    min-height: 150vh; /* full screen height if needed */
+    min-height: 140vh; /* full screen height if needed */
   height: auto;  
     background-color: var(--lightblue);
     display: flex;
@@ -32,7 +32,7 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 230px;
+    height: 270px;
   }
   
   @media (max-width: 768px) {
@@ -113,8 +113,8 @@
     }
   }
   .scard1{
-    width: 350px;
-  height: 350px;
+    width: 400px;
+  height: 380px;
   border-radius: 30px;
   background-color: white;
   padding: 30px;

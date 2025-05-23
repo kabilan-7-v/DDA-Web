@@ -32,9 +32,9 @@ function Aboutcontent() {
 
                 To be a leading force in design and digital innovation, fostering creativity and delivering impactful solutions that make a difference.
               </p>
-              <button className="about-ab-b1">
+              {/* <button className="about-ab-b1">
                 Free-consultation
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

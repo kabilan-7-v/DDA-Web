@@ -1,23 +1,29 @@
-*{
-    
-    font-family: Roboto;
-    padding: 0%;
-    margin: 0%;
+/* Reset & base styles */
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  --blue: #5d56f1;
+  --lightblue: #F7F8FD;
 }
-:root{
-    --blue:#5d56f1;
-    --lightblue:#F7F8FD;
-  
-}
+
+/* Navbar container */
 .topbar {
   background-color: white;
-  position: relative;
-  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
   display: flex;
   justify-content: center;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
 }
-.top{
+
+.top {
   width: 85%;
 }
 
@@ -25,27 +31,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  position: relative;
-}
-
-.logo img {
-  width: 200px;
-}
-
-.menu {
   padding: 10px 0;
+}
+
+/* Logo */
+.logo img {
+  width: 180px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* Menu styles */
+.menu {
+  display: flex;
 }
 
 .menu ul {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
+  gap: 25px;
 }
 
 .menu li {
-  margin-left: 25px;
+  position: relative;
 }
 
 .menu a {
@@ -53,54 +65,109 @@
   font-size: 16px;
   font-weight: 500;
   color: black;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.free-consult button {
-  padding: 10px 20px;
-  border-radius: 100px;
-  border: none;
-  color: white;
-  background-color: var(--blue);
-  cursor: pointer;
+.menu a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--blue);
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
 }
 
-.fa-solid {
-  margin-left: 10px;
+.menu a:hover {
+  color: var(--blue);
 }
 
-/* Hamburger icon */
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger */
 .hamburger {
   display: none;
-  font-size: 28px;
+  width: 30px;
+  height: 22px;
   cursor: pointer;
+  position: relative;
+  transition: 0.3s ease-in-out;
 }
 
-/* Responsive styles */
+.hamburger span {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: var(--blue);
+  border-radius: 3px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 9px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 18px;
+}
+
+/* Hamburger animation (to X) */
+.hamburger.open span:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 20px;
-    background-color: white;
-    width: 200px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 10px 0;
+  .hamburger {
+    display: block;
   }
 
-  .menu.active {
-    display: block;
+  .menu {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    background-color: white;
+    width: 220px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .menu.open {
+    max-height: 300px; /* Adjust as needed */
+    padding: 15px 0;
   }
 
   .menu ul {
     flex-direction: column;
+    gap: 15px;
+    padding: 0 15px;
   }
 
   .menu li {
-    margin: 10px 20px;
-  }
-
-  .hamburger {
-    display: block;
+    margin: 0;
   }
 }

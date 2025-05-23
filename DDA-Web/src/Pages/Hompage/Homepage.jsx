@@ -40,12 +40,12 @@ function Homepage() {
             <p className="p2">
               We turn clicks into customers with expert design and marketing..
             </p>
-            <button className="banner-b1">
+            {/* <button className="banner-b1">
               Free Consultation <img src={arrow} alt="arrow" />
             </button>
             <button className="banner-b2">
               View Portfolio <img src={arrow} alt="arrow" />
-            </button>
+            </button> */}
           </div>
         </div>
 

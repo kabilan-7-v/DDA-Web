@@ -21,11 +21,11 @@ function Serv() {
             </div>
             
 
-            <div className="ser-b1">
+            {/* <div className="ser-b1">
               <button>
                 View All Services <img src={arrow} alt="Description" />
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="ser-card">
             

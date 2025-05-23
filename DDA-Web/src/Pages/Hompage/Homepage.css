@@ -16,6 +16,7 @@ body, .banner-content, h1, p, button {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: 70px;
 }
 .black-banner{
     width: 100%;
