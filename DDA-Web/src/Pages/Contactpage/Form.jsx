@@ -13,7 +13,7 @@ function Form() {
           
             <div className='container-cp'>
             <form className="contact-form">
-    <h2>Get in Touch.let us know how we can help</h2>
+    <h2>Get in Touch.let us know how can we help</h2>
 
     <div className="form-group">
       <label for="mobile">Email ID</label>
