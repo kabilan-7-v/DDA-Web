@@ -2,6 +2,8 @@ import React from "react";
 import "./Serv.css";
 import arrow from "../../assets/image/arrow-right.png";
 import CategoryForm from "../../Component/Navbarcomponent.jsx/CategoryForm";
+import { Link } from 'react-router-dom';
+
 
 function Serv() {
   return (
@@ -26,8 +28,8 @@ function Serv() {
             </div>
           </div>
           <div className="ser-card">
-            <a href="/webdevelopment">
-              <div className="scard1">
+            
+          <div className="scard1">
                 <div className="scard1-top">
                   <h2>
                     Web <br />
@@ -50,7 +52,7 @@ function Serv() {
                   <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg" />
                 </div>
               </div>
-            </a>
+           
          <a href="/wdprice"><div className="scard1">
               <div className="scard1-top">
                 <h2>

@@ -1,6 +1,7 @@
 .ab-content{
     width: 100%;
     height: 800px;
+    padding: 30px 0;
     display: flex;
     justify-content: center;
 }
@@ -40,6 +41,7 @@
   }
   @media (max-width: 1024px) {
   .about-ab-p1 {
+    margin-top: 130px;
     font-size:18px ;
   }
   }
@@ -113,14 +115,22 @@
   @media (max-width: 768px) {
   .about-ab-content {
       width: 100%; 
-      margin-bottom: -100px;
-      height: 900px;
+      margin-top: 70px;
+      height: auto;
   }
   }
   .about-ab-content-p1{
     font-size: 18px;
     color: rgb(151, 151, 151);
     margin-top: 20px;
+    line-height: 1.8vw;
+  }
+    @media (max-width: 768px) {
+  .about-ab-content-p1 {
+       font-size: 16px;
+       line-height: 20px;
+      
+  }
   }
   
   

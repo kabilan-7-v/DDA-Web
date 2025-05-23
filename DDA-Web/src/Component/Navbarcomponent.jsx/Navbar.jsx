@@ -30,11 +30,11 @@ function Navbar() {
           </ul>
         </div>
 
-        <div className="free-consult">
+        {/* <div className="free-consult">
           <button>
             Free consultation <i className="fa-solid fa-arrow-right"></i>
           </button>
-        </div>
+        </div> */}
       </div>
       </div>
     </div>
