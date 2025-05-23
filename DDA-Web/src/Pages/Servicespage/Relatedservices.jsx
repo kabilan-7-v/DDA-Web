@@ -16,10 +16,10 @@ function Relatedservices() {
               </h1>
             </div>
             <div className="related-b1">
-              <button>
+          <a href='/services'>   <button>
                 View All related services <img src={arrow} alt="Description" />
         
-              </button>
+              </button></a> 
             </div>
           </div>
           <div className='related-card'>
@@ -45,9 +45,10 @@ function Relatedservices() {
                 </div>
         
             </div></a>
-            <div className='rcard1'>
+
+         <a href='/app-price'>   <div className='rcard1'>
                 <div className='rcard1-top'>
-                <h2>Digital <br /> Marketing</h2>
+                <h2>App <br /> Development</h2>
                 <div class="rcard1-btn">
                       <button><img src={arrow} alt="Description" /></button>
                     </div>
@@ -65,10 +66,10 @@ function Relatedservices() {
                   <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg" />
                 </div>
         
-            </div>
-            <div className='rcard1'>
+            </div></a>
+          <a href='/graphic'>  <div className='rcard1'>
                 <div className='rcard1-top'>
-                <h2>Game <br /> Development</h2>
+                <h2>Graphic <br /> Design</h2>
                 <div class="rcard1-btn">
                       <button><img src={arrow} alt="Description" /></button>
                     </div>
@@ -86,7 +87,7 @@ function Relatedservices() {
                   <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg" />
                 </div>
         
-            </div>
+            </div></a>
             
             
             

@@ -4,13 +4,13 @@
  font-size: 24px;
  font-weight: 500;
 }
-.banner-ux-content h1{
+.banner-gr-content h1{
     font-size:6vw;
     color:white;
     margin-bottom: 20px;
 }
 
-.banner-ux-content span{
+.banner-gr-content span{
     color: var(--blue);
     background-color: transparent;
 }
@@ -19,7 +19,7 @@
     color: white;
     font-size: 20px;
 }
-.banner-ux-b1{
+.banner-gr-b1{
     padding: 10px 20px;
     border-radius: 100px;
     border: none;
@@ -30,15 +30,15 @@
     font-size: 16px;
     
 }
-.banner-ux-b1 a{
+.banner-gr-b1 a{
     color:white;
     text-decoration: none;
 }
-.ab-ux{
+.ab-gr{
     display: flex;
     justify-content: center;
 }
-.about-ux{
+.about-gr{
     width: 85%;
     height: 800px;
     margin-top: 100px;
@@ -46,50 +46,50 @@
 
 }
 @media (max-width: 1024px) {
-.about-ux {
+.about-gr {
   height: auto;
 }
 }
 @media (max-width: 768px) {
-.about-ux {
+.about-gr {
   height: auto;
 }
 }
 
-.about-ux-p1{
+.about-gr-p1{
   font-size: 22px;
   font-weight: 500;
   color: var(--blue);
   margin-bottom: 20px;
 }
 @media (max-width: 1024px) {
-.about-ux-p1 {
+.about-gr-p1 {
   font-size:18px ;
 }
 }
 @media (max-width: 768px) {
-.about-ux-p1 {
+.about-gr-p1 {
     font-size:18px ;
 }
 }
-.about-ux-h1{
+.about-gr-h1{
   font-size: 3.5vw;
   margin-bottom: 20px;
   
 }
 
-.about-ux-image{
+.about-gr-image{
   width: 100%;
   height: 700px;
   display: flex;
 }
 @media (max-width: 768px) {
-.about-ux-image {
+.about-gr-image {
     height: auto;
     display: block;
 }
 }
-.image-ux{
+.image-gr{
   width: 50%;
   height:700px;
   
@@ -99,31 +99,31 @@
   
 }
 @media (max-width: 1024px) {
-.image-ux {
+.image-gr {
   height: auto;
 }
 }
 @media (max-width: 768px) {
-.image-ux {
+.image-gr {
   width: 100%;
   
     
 }
 }
 
-.image-ux img{
+.image-gr img{
   width: 85%;
   border-radius: 50px;
 }
 @media (max-width: 768px) {
-.image-ux img {
+.image-gr img {
   width: 100%;
     margin-top: 50px;
     margin-bottom: -150px;
     
 }
 }
-.about-ux-content{
+.about-gr-content{
   width: 50%;
   height:700px;
   display: flex;
@@ -131,20 +131,20 @@
   
 }
 @media (max-width: 768px) {
-.about-ux-content {
+.about-gr-content {
     width: 100%; 
     margin-bottom: -100px;
     height: 900px;
 }
 }
-.about-ux-content-p1{
+.about-gr-content-p1{
   font-size: 16px;
   color: rgb(151, 151, 151);
   line-height: 22px;
 }
 
 
-.about-ux-b1{
+.about-gr-b1{
   padding: 10px 20px;
   border-radius: 100px;
   border: none;

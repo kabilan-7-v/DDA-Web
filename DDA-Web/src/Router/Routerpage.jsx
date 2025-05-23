@@ -12,6 +12,8 @@ import Portfoliopage from "../Pages/Portfolio/Portfoliopage";
 import WDprice from "../Pages/Servicespage/WDprice";
 import AppPrice from "../Pages/Servicespage/AppPrice";
 import BrandingPrice from "../Pages/Servicespage/BrandingPrice";
+import Graphic from "../Pages/Servicespage/Graphic";
+import UxUiPrice from "../Pages/Servicespage/UxUiPrice";
 
 function Routerpage() {
   return (
@@ -26,6 +28,8 @@ function Routerpage() {
         <Route path="/wdprice" element={<WDprice></WDprice>} ></Route>
         <Route path="/app-price" element={<AppPrice></AppPrice>} ></Route>
         <Route path="/branding-price" element={<BrandingPrice></BrandingPrice>} ></Route>
+        <Route path="/graphic" element={<Graphic></Graphic>} ></Route>
+        <Route path="/uxui-price" element={<UxUiPrice></UxUiPrice>} ></Route>
 
 
       </Routes>

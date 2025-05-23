@@ -20,12 +20,12 @@ function PackBranding
                 <div className="package1-br">
                   <div className="package1-br-top"><h3>Basic Package</h3></div>
                   <hr />
-                  <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 6,999</h1></div>
+                  <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 3,999</h1></div>
                   <div><p>Perfect for startups and small businesses</p></div>
                   <div className="pack-br-info">
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Basic Logo Design Concept </p>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Business Card </p>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> No Brand Guidelines</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> Logo Design (2 Concepts) </p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> Color Palette + Typography </p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> 2 Revisions</p>
                     
                   </div>
                   <hr />
@@ -36,12 +36,13 @@ function PackBranding
                 <div className="package2-br">
                   <div className="package2-br-top"><h3>Standard Package</h3></div>
                   <hr />
-                  <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 14,999</h1></div>
+                  <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 9,999</h1></div>
                   <div><p>Perfect for startups and small businesses</p></div>
                   <div className="pack-br-info2">
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Custom Logo + Variants Logo</p>
-                    <p><FontAwesomeIcon icon={faCircleCheck} />  Letterhead & Envelope</p>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Basic Brand Guidelines</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> Logo + Business Card + Letterhead</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} />  Social Media Kit</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> Brand Guidelines PDF</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> Source Files</p>
                     
                   </div>
                   <hr />
@@ -54,9 +55,10 @@ function PackBranding
                   <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 29,999</h1></div>
                   <div><p>Perfect for startups and small businesses</p></div>
                   <div className="pack-br-info">
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Premium Logo + Guidebook</p>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Full Suite + Mockups</p>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Full Brand Guidelines</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} />  Full Brand Identity (Logo, Stationery, SM Kit) </p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} />  Moodboards & Brand Strategy </p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} />  Packaging/Print Templates </p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} />  Brand Style Guide </p>
                     
                   </div>
                   <hr />

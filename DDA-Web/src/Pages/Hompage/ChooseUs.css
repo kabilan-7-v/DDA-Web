@@ -26,11 +26,18 @@
     height: 250px;
 
 }
+ @media (max-width: 768px) {
+    .why-choose-head{
+      margin-top: -50px;
+    
+    }
+  }
 
 .why-choose-headcontent{
     background-color: transparent;
     margin-top: 100px;
 }
+ 
 .why-choose-p1{
     font-size: 22px;
     font-weight: 500;

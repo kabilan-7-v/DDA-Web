@@ -20,6 +20,7 @@
   @media (max-width: 768px) {
     .ser {
       height: auto;
+      
      
     }
   }
@@ -108,7 +109,7 @@
   }
  @media (max-width: 768px) {
     .ser-card {
-      margin-bottom: 100px;
+      margin-bottom: 10px;
     }
   }
   .scard1{

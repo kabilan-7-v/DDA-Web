@@ -29,7 +29,7 @@ function Serv() {
           </div>
           <div className="ser-card">
             
-          <div className="scard1">
+         <a href="/webdevelopment"> <div className="scard1">
                 <div className="scard1-top">
                   <h2>
                     Web <br />
@@ -51,9 +51,9 @@ function Serv() {
                 <div class="scard1-image">
                   <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg" />
                 </div>
-              </div>
+              </div></a>
            
-         <a href="/wdprice"><div className="scard1">
+         <a href="/app-price"><div className="scard1">
               <div className="scard1-top">
                 <h2>
                   App <br /> Development
@@ -75,7 +75,7 @@ function Serv() {
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-2.jpg" />
               </div>
             </div></a>
-         <a href="/app-price"><div className="scard1">
+         <a href="/graphic"><div className="scard1">
               <div className="scard1-top">
                 <h2>
                   Graphic <br /> Design
@@ -97,7 +97,7 @@ function Serv() {
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-3.jpg" />
               </div>
             </div></a>
-          <a href="branding-price">  <div className="scard1">
+          <a href="/uxui-price">  <div className="scard1">
               <div className="scard1-top">
                 <h2>
                   UI/UX <br/> Design
@@ -119,7 +119,7 @@ function Serv() {
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-4.jpg" />
               </div>
             </div></a>
-            <div className="scard1">
+           <a href="/branding-price"> <div className="scard1">
               <div className="scard1-top">
                 <h2>
                   Branding <br/>Design
@@ -140,7 +140,7 @@ function Serv() {
               <div class="scard1-image">
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-5.jpg" />
               </div>
-            </div>
+            </div></a>
             <div className="scard1">
               <div className="scard1-top">
                 <h2>

@@ -40,8 +40,9 @@ function AppPrice() {
                 </div>
               </div>
               </div>
-              <ChooseUs></ChooseUs>
+              
 <PackApp></PackApp>
+<ChooseUs></ChooseUs>
 <Relatedservices></Relatedservices>
 <Footer></Footer>
     </>

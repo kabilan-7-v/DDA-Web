@@ -39,8 +39,9 @@ function BrandingPrice() {
                 </div>
               </div>
               </div>
+              <PackBranding></PackBranding>
               <ChooseUs></ChooseUs>
-<PackBranding></PackBranding>
+
 <Relatedservices></Relatedservices>
 <Footer></Footer>
     </>

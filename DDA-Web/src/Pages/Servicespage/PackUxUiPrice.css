@@ -1,36 +1,36 @@
-.ecomm-price{
+.ux-price{
     width: 100%;
     height: 900px;
-    background-color:var(--lightblue);
+    background-color:white;
     display: flex;
     justify-content: center;
 }
 @media (max-width: 1024px) {
-  .ecomm-price {
+  .eweb-price {
     height:auto;
   }
 }
 @media (max-width: 768px) {
-  .ecomm-price {
+  .eweb-price {
     height: auto;
   }
 }
-.pacakage{
+.pacakage-ux{
     width: 85%;
   
 }
 @media (max-width: 1024px) {
-  .package {
+  .package-ux {
     height:auto;
   }
 }
 @media (max-width: 768px) {
-  .package {
+  .package-ux {
     width: 80%;
     height: auto;
   }
 }
-.package-head{
+.package-ux-head{
     
   background-color:transparent;
   display: flex;
@@ -38,34 +38,34 @@
   height: 250px;
 
 }
-.package-headcontent{
+.package-ux-headcontent{
     width: 80%;
     margin-top: 100px;
 }
 
-.package-p1{
+.package-ux-p1{
   font-size: 22px;
   font-weight: 500;
   color: var(--blue);
   background-color: transparent;
 }
 @media (max-width: 1024px) {
-  .package-p1 {
+  .package-ux-p1 {
     font-size:20px ;
   }
 }
 @media (max-width: 768px) {
-  .package-p1 {
+  .package-ux-p1 {
       font-size:18px ;
   }
 }
-.package-h1{
+.package-ux-h1{
   font-size: 4.5vw;
   background-color: transparent;
 }
 
 
-.package-card{
+.package-ux-card{
  
   margin-top: 80px;
   display:flex ;
@@ -76,11 +76,11 @@
   
 }
 
-.package1{
+.package1-ux{
   width: 330px;
   height: auto;
   border-radius: 30px;
-  background-color:white;
+  background-color:var(--lightblue);
   padding: 30px;
   margin-bottom: 50px;
   text-align: center;
@@ -88,52 +88,52 @@
   
 }
 @media (max-width: 1024px) {
-.package1{
+.package1-ux{
   width: 300px;
   height: 350;
  
 }
 }
 @media (max-width: 768px) {
-.package1 {
+.package1-ux {
   width: 400px;
   height: auto;
   
 }
 }
-.package1 h1{
+.package1-ux h1{
   font-size: 2.9vw;
   color: var(--blue);
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.pack-info{
+.pack-ux-info{
 text-align:left;
 line-height: 50px;
 }
 
-.package1 h5{
+.package1-ux h5{
   font-size:20px;
 }
-.package1 .fa-solid{
+.package1-ux .fa-solid{
   color: var(--blue);
 }
-.package1-top h3{
+.package1-ux-top h3{
     font-size: 25px;
     margin-bottom: 20px;
 }
-.pack-info p svg {
+.pack-ux-info p svg {
   color:var(--blue);
 }
-.package1 h5 svg {
+.package1-ux h5 svg {
   color:var(--blue);
 }
-.pack-info p {
+.pack-info-ux p {
     font-size: 16px;
 }
 
 
-.package2{
+.package2-ux{
   width: 330px;
   height: auto;
   border-radius: 30px;
@@ -146,54 +146,54 @@ line-height: 50px;
   
 }
 @media (max-width: 1024px) {
-.package2{
+.package2-ux{
   width: 300px;
   height: 350;
  
 }
 }
 @media (max-width: 768px) {
-.package2 {
+.package2-ux {
   width:400px;
   height: auto;
   
 }
 }
-.package2 h1{
+.package2-ux h1{
   font-size: 2.9vw;
   color: white;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.pack-info2{
+.pack-ux-info2{
 text-align:left;
 line-height: 50px;
 }
 
-.package2 h5{
+.package2-ux h5{
   font-size:20px;
 }
 
-.package2-top h3{
+.package2-ux-top h3{
     font-size: 25px;
     margin-bottom: 20px;
     color: white;
 }
-.pack-info2 p svg {
+.pack-info2-ux p svg {
   color:white;
 }
-.package2 h5 svg {
+.package2-ux h5 svg {
   color:white;
 }
-.pack-info2 p {
+.pack-info2-ux p {
     font-size: 16px;
 }
-.pack-button {
+.pack-ux-button {
   margin-top: auto;
   text-align: center;
 }
 
-.pack-button button {
+.pack-ux-button button {
   background-color: var(--lightblue);
   color: var(--blue);
   padding: 10px 24px;
@@ -206,11 +206,11 @@ line-height: 50px;
   margin-top: 15px;
 }
 
-.pack-button button:hover {
+.pack-ux-button button:hover {
   background-color:var(--blue);
   color: white;
 }
-.pack2-button button {
+.pack2-ux-button button {
   background-color: var(--blue);
   color: white;
   padding: 10px 24px;
@@ -223,7 +223,7 @@ line-height: 50px;
   margin-top: 15px;
 }
 
-.pack2-button button:hover {
+.pack2-ux-button button:hover {
   background-color:var(--lightblue);
   color: var(--blue);
 }

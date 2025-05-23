@@ -56,6 +56,7 @@ function PackEcomm() {
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Basic SEO</p>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Delivery in 7 Days</p>
               </div>
+              <hr/>
               <div className="pack-button">
                 <button onClick={handleChoose}>Choose Basic</button>
               </div>
@@ -73,7 +74,8 @@ function PackEcomm() {
                 <p><FontAwesomeIcon icon={faCircleCheck} /> WhatsApp/Email Integration</p>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Delivery in 12–15 Days</p>
               </div>
-              <div className="pack-button">
+               <hr />
+              <div className="pack2-button">
                 <button onClick={handleChoose}>Choose Standard</button>
               </div>
             </div><div className="package1">
@@ -89,8 +91,9 @@ function PackEcomm() {
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Live Chat, Security Setup</p>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Delivery in 20–25 Days</p>
               </div>
+              <hr/>
               <div className="pack-button">
-                <button onClick={handleChoose}>Premium Basic</button>
+                <button onClick={handleChoose}>Choose Premium</button>
               </div>
             </div>
           </div>
