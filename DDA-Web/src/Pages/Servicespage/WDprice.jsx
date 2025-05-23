@@ -9,6 +9,26 @@ import Footer from '../../Pages/Hompage/Footer.jsx';
 
 
 function WDprice() {
+  const serviceData = [
+    {
+      title: 'Web Development',
+      description: 'Custom, responsive websites that drive performance and visibility.',
+      image: 'https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg',
+      link: '/webdevelopment'
+    },
+    {
+      title: 'App Development',
+      description: 'Smart, user-friendly mobile applications for Android and iOS platforms.',
+      image: 'https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg',
+      link: '/app-price'
+    },
+    {
+      title: 'Graphic Design',
+      description: 'Compelling visuals and marketing materials that reflect your brand identity.',
+      image: 'https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg',
+      link: '/graphic'
+    }
+  ];
   return (
     <>
     <Navbar></Navbar>
@@ -45,7 +65,8 @@ function WDprice() {
 <PackWebdesign></PackWebdesign>
 <ChooseUs></ChooseUs>
 
-<Relatedservices></Relatedservices>
+<Relatedservices services={serviceData} />
+
 <Footer></Footer>
     </>
   )

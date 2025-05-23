@@ -48,6 +48,7 @@
   font-weight: 500;
   color: var(--blue);
   background-color: transparent;
+  
 }
 @media (max-width: 1024px) {
   .package-wd-p1 {
