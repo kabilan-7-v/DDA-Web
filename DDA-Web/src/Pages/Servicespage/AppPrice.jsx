@@ -32,9 +32,7 @@ function AppPrice() {
                           
                         A professionally developed app works around the clock—boosting customer loyalty, streamlining user experiences, and helping your brand stay ahead in a competitive digital landscape. When executed well, an app becomes a vital tool for business growth and customer connection.
                       </p>
-                      <button className="about-ap-b1">
-                        Free-consultation<i className="fa-solid fa-arrow-right"></i>
-                      </button>
+                      
                     </div>
                   </div>
                 </div>

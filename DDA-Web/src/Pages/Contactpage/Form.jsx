@@ -2,7 +2,7 @@ import React from 'react'
 import './Form.css'
 import Monitor from '../../assets/image/monitor.png'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faCircleCheck, faIndianRupee } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 function Form() {
@@ -13,7 +13,7 @@ function Form() {
           
             <div className='container-cp'>
             <form className="contact-form">
-    <h2>Get in Touch.let us know how can we help</h2>
+    <h1>We Love To Hear<br/>From You</h1>
 
     <div className="form-group">
       <label for="mobile">Email ID</label>
@@ -60,18 +60,36 @@ function Form() {
     </div>
 
   </form>
-  <div class="image-section">
-        <iframe
+  <div className="image-section">
+  <div className="map-details">
+  <h2>Visit Our Office</h2>
+  <p>"Where creativity meets clarity—let’s build something extraordinary together."</p>
+  <div className="contact-columns">
+    <div className="contact-box">
+      <p><FontAwesomeIcon icon={faLocationDot} /><br/>Buff Creative College, Madurai</p>
+    </div>
+    <div className="contact-box">
+      <p><FontAwesomeIcon icon={faPhone} /><br/>+91 98765 43210</p>
+    </div>
+    <div className="contact-box">
+      <p><FontAwesomeIcon icon={faEnvelope} /><br/>info@buffcreativecollege<br/>.com</p>
+    </div>
+  </div>
+</div>
+
+
+<iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.228658369643!2d78.1414504!3d9.9149048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5e8e6bfbeb7%3A0x87151bd0a7a17d01!2sBuff%20Creative%20College%20Madurai!5e0!3m2!1sen!2sin!4v1747647563758!5m2!1sen!2sin" 
     width="100%"
-    height="600px"
+    height="400px"
     style={{ border: 0 }}
     allowFullScreen=""
     loading="fast"
     referrerPolicy="no-referrer-when-downgrade"
     title="Google Map"
   ></iframe>
-    </div>
+</div>
+
   </div>
 
 

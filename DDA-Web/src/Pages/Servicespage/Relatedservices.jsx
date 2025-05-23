@@ -36,8 +36,7 @@ function Relatedservices() {
         
                 <div>
                     <p>
-                      totam rem aperiam, eaque ipsa quae ab illo inventore et quasi
-                      architecto beatae
+                      Custom, responsive websites that drive performance and visibility.
                     </p>
                   </div>
                   <div class="rcard1-image">
@@ -58,8 +57,8 @@ function Relatedservices() {
         
                 <div>
                     <p>
-                      totam rem aperiam, eaque ipsa quae ab illo inventore et quasi
-                      architecto beatae
+                       Smart, user-friendly mobile applications for Android and iOS platforms.
+
                     </p>
                   </div>
                   <div class="rcard1-image">
@@ -79,8 +78,7 @@ function Relatedservices() {
         
                 <div>
                     <p>
-                      totam rem aperiam, eaque ipsa quae ab illo inventore et quasi
-                      architecto beatae
+                       Compelling visuals and marketing materials that reflect your brand identity.
                     </p>
                   </div>
                   <div class="rcard1-image">

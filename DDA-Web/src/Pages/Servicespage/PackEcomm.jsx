@@ -45,10 +45,10 @@ function PackEcomm() {
           <div className="container package-card">
             {/* Sample package with button */}
             <div className="package1">
-              <div className="package1-top"><h3>Basic Website</h3></div>
+              <div className="package1-top"><h3>Basic Package</h3></div>
               <hr />
               <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 12,999</h1></div>
-              <div><p>Perfect for startups and small businesses</p></div>
+             
               <div className="pack-info">
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Up to 5 Static page</p>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Responsive Design</p>
@@ -62,10 +62,10 @@ function PackEcomm() {
               </div>
             </div>
             <div className="package2">
-              <div className="package2-top"><h3>Standard Website</h3></div>
+              <div className="package2-top"><h3>Standard Package</h3></div>
               <hr />
               <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 29,999</h1></div>
-              <div><p>Perfect for startups and small businesses</p></div>
+              
               <div className="pack-info2">
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Up to 10 Static page</p>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Dynamic CMS (WordPress/Custom)</p>
@@ -79,10 +79,10 @@ function PackEcomm() {
                 <button onClick={handleChoose}>Choose Standard</button>
               </div>
             </div><div className="package1">
-              <div className="package1-top"><h3>Premium Website</h3></div>
+              <div className="package1-top"><h3>Premium Package</h3></div>
               <hr />
               <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 59,999</h1></div>
-              <div><p>Perfect for startups and small businesses</p></div>
+              
               <div className="pack-info">
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Unlimited Pages</p>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Custom Design & CMS</p>

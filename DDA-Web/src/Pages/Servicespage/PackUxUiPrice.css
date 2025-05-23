@@ -6,12 +6,12 @@
     justify-content: center;
 }
 @media (max-width: 1024px) {
-  .eweb-price {
+  .ux-price {
     height:auto;
   }
 }
 @media (max-width: 768px) {
-  .eweb-price {
+  .ux-price {
     height: auto;
   }
 }
@@ -60,8 +60,13 @@
   }
 }
 .package-ux-h1{
-  font-size: 4.5vw;
+  font-size: 70px;
   background-color: transparent;
+}
+@media (max-width: 768px) {
+  .package-ux-h1 {
+      font-size:35px ;
+  }
 }
 
 
@@ -102,11 +107,12 @@
 }
 }
 .package1-ux h1{
-  font-size: 2.9vw;
+  font-size: 40px;
   color: var(--blue);
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .pack-ux-info{
 text-align:left;
 line-height: 50px;
@@ -160,7 +166,7 @@ line-height: 50px;
 }
 }
 .package2-ux h1{
-  font-size: 2.9vw;
+  font-size: 40px;
   color: white;
   margin-top: 10px;
   margin-bottom: 10px;

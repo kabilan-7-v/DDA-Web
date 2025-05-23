@@ -32,9 +32,7 @@ function UxUiPrice() {
                           
                         Professional UX/UI design builds trust and drives results. In today’s competitive digital world, your interface is often your first impression. A well-crafted user experience doesn’t just delight users—it boosts retention, encourages action, and sets your brand apart by delivering value through every interaction.
                       </p>
-                      <button className="about-ux-b1">
-                        Free-consultation<i className="fa-solid fa-arrow-right"></i>
-                      </button>
+                      
                     </div>
                   </div>
                 </div>

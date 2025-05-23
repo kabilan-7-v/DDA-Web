@@ -21,7 +21,7 @@ function PackBranding
                   <div className="package1-br-top"><h3>Basic Package</h3></div>
                   <hr />
                   <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 3,999</h1></div>
-                  <div><p>Perfect for startups and small businesses</p></div>
+                  
                   <div className="pack-br-info">
                     <p><FontAwesomeIcon icon={faCircleCheck} /> Logo Design (2 Concepts) </p>
                     <p><FontAwesomeIcon icon={faCircleCheck} /> Color Palette + Typography </p>
@@ -37,7 +37,7 @@ function PackBranding
                   <div className="package2-br-top"><h3>Standard Package</h3></div>
                   <hr />
                   <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 9,999</h1></div>
-                  <div><p>Perfect for startups and small businesses</p></div>
+                  
                   <div className="pack-br-info2">
                     <p><FontAwesomeIcon icon={faCircleCheck} /> Logo + Business Card + Letterhead</p>
                     <p><FontAwesomeIcon icon={faCircleCheck} />  Social Media Kit</p>
@@ -53,7 +53,7 @@ function PackBranding
                   <div className="package1-br-top"><h3>Premium Package</h3></div>
                   <hr />
                   <div><h1><FontAwesomeIcon icon={faIndianRupee} /> 29,999</h1></div>
-                  <div><p>Perfect for startups and small businesses</p></div>
+                  
                   <div className="pack-br-info">
                     <p><FontAwesomeIcon icon={faCircleCheck} />  Full Brand Identity (Logo, Stationery, SM Kit) </p>
                     <p><FontAwesomeIcon icon={faCircleCheck} />  Moodboards & Brand Strategy </p>

@@ -7,6 +7,8 @@ import banner from '../../assets/image/Temp-banner.jpg';
 import ChooseUs from '../../Pages/Hompage/ChooseUs.jsx';
 import Footer from '../../Pages/Hompage/Footer.jsx';
 import PackEcomm from '../../Pages/Servicespage/PackEcomm.jsx';
+import ABcomm from '../../assets/image/e-comm.jpg';
+import Relatedservices from '../../Pages/Servicespage/Relatedservices.jsx';
 
 
 
@@ -30,7 +32,7 @@ function WebDevelopment() {
             </div>
           </div> */}
 
-    <div className='ser01'>
+    {/* <div className='ser01'>
       <div className='servs01'>
 
     <div className='ser01-card'>
@@ -168,9 +170,37 @@ function WebDevelopment() {
       </div>
       </div>
 
-</div>
+</div> */}
+<div className='ab-wb'>
+                  <div className="about-wb p-0">
+                <div className="container about-wb-image p-0">
+                  <div className="image-wb">
+                    <img src={ABcomm} />
+                   
+                  </div>
+                  <div className="about-wb-content">
+                    <div className="para-wb">
+                      <p className="about-wb-p1">Web Development</p>
+                      <h1 className="about-wb-h1">
+                        Web development that scales with your ambition.
+                      </h1>
+                      <p className="about-wb-content-p1">
+                       
+                        Web development is the backbone of your digital presence—transforming ideas into seamless, interactive experiences that serve both function and form. A well-developed website does more than just load pages; it ensures speed, security, and smooth navigation while aligning with your brand’s identity and business objectives.<br/><br/>
+        
+                        Exceptional web development brings together clean code, responsive design, and thoughtful architecture. It balances performance with user experience, translating complex requirements into scalable solutions that work effortlessly across devices and platforms. Every interaction is intentional—crafted to engage users, drive conversions, and support long-term growth.<br/><br/>
+                          
+                       Professional web development is your silent partner in building credibility and digital efficiency. It enhances trust, supports evolving needs, and ensures your website grows alongside your business. In a fast-paced digital world, a great website isn’t just an asset—it’s a powerful tool that connects, converts, and elevates your brand.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
           <PackEcomm></PackEcomm>
           <ChooseUs></ChooseUs>
+          <Relatedservices></Relatedservices>
           <Footer></Footer>
     </>
   )

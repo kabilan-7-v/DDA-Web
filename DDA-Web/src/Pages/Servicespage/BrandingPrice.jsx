@@ -31,9 +31,7 @@ function BrandingPrice() {
                           
                         A well-developed brand works 24/7—enhancing recognition, reinforcing credibility, and helping you stand out in a crowded marketplace. When done right, branding becomes more than just design—it becomes the foundation for meaningful growth and long-term success.
                       </p>
-                      <button className="about-br-b1">
-                        Free-consultation<i className="fa-solid fa-arrow-right"></i>
-                      </button>
+                      
                     </div>
                   </div>
                 </div>

@@ -32,9 +32,7 @@ function Graphic() {
                           
                         Professional graphic design works behind the scenes to strengthen brand recognition, enhance user experience, and support business growth. In a crowded digital world, design becomes your silent ambassador—speaking volumes, building trust, and setting your brand apart.
                       </p>
-                      <button className="about-gr-b1">
-                        Free-consultation<i className="fa-solid fa-arrow-right"></i>
-                      </button>
+                      
                     </div>
                   </div>
                 </div>

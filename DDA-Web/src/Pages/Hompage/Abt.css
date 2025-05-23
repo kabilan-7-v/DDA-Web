@@ -39,7 +39,7 @@
   }
 }
 .about-h1{
-    font-size: 4.5vw;
+    font-size: 4vw;
 }
 @media (max-width: 768px) {
   .about-h1 {
@@ -133,4 +133,7 @@
     margin-top: 20px;
     font-size: 16px;
     font-weight: 600;
+}
+strong{
+  color: black;
 }
