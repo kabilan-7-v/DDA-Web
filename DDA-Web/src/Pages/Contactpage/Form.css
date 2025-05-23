@@ -78,10 +78,11 @@
       border: 1px solid #ccc;
       border-radius: 8px;
       font-size: 14px;
+      border: 1px solid var(--blue);
     }
     .form-group button{
-        width: 30%;
-      padding: 10px;
+        width: 100%;
+      padding: 15px;
       border: 1px solid #ccc;
       border-radius: 8px;
       font-size: 14px;
@@ -90,6 +91,36 @@
 
     .form-group button {
       background-color:var(--blue);
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .form-group-p1{
+      font-weight: 800;
+      text-align: center;
+    }
+    .otp-box{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .otp-box input{
+      width: 40px;
+      height: 40px;
+    }
+       .form-verify button{
+        width: 100%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+   
+
+    .form-verify button {
+      background-color:rgb(210, 203, 255);
       color: white;
       cursor: pointer;
       font-weight: bold;

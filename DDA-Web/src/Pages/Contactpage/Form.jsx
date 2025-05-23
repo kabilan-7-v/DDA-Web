@@ -15,28 +15,21 @@ function Form() {
             <form className="contact-form">
     <h1>We Love To Hear<br/>From You</h1>
 
-    <div className="form-group">
-      <label for="mobile">Email ID</label>
-      <input type="email" id="email" name="email" placeholder="Enter email Id" required />
-    </div>
-
-    <div className="form-group">
-      <button type="button" className="btn-secondary">Get OTP</button>
-    </div>
-
-    <div className="form-group">
-      <label for="otp">Enter OTP</label>
-      <input type="text" id="otp" name="otp" placeholder="Enter OTP" required />
-    </div>
-
-    <div className="form-group">
-      <button type="button">Verify</button>
-    </div>
-
-    <div className="form-group">
+<div className="form-group">
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" placeholder="Enter your name" required />
     </div>
+     <div className="form-group">
+      <label for="mobile">Email ID</label>
+      <input type="email" id="email" name="email" placeholder="Enter email Id" required />
+    </div>
+ <div className="form-group">
+      <label for="number">Enter Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter Phone Number" required />
+    </div>
+   
+
+    
 
     {/* <div className="form-group">
       <label for="email">Email Address</label>
@@ -56,9 +49,22 @@ function Form() {
     </div>
 
     <div className="form-group">
-      <button type="submit">Submit</button>
+      <button type="submit">Submit & Get OTP</button>
     </div>
-
+    <div className='form-group-p1'>
+    <p>Please enter the code that was sent to your email ID</p>
+        </div>
+        <div className='otp-box'>
+        <input type="textarea" id="otp-box" name="otp-box"  required />
+        <input type="textarea" id="otp-box" name="otp-box"  required />
+        <input type="textarea" id="otp-box" name="otp-box"  required />
+        <input type="textarea" id="otp-box" name="otp-box"  required />
+        <input type="textarea" id="otp-box" name="otp-box"  required />
+        <input type="textarea" id="otp-box" name="otp-box"  required />
+        </div>
+       <div className="form-verify">
+      <button type="submit">Verify</button>
+    </div> 
   </form>
   <div className="image-section">
   <div className="map-details">
@@ -66,13 +72,13 @@ function Form() {
   <p>"Where creativity meets clarity—let’s build something extraordinary together."</p>
   <div className="contact-columns">
     <div className="contact-box">
-      <p><FontAwesomeIcon icon={faLocationDot} /><br/>Buff Creative College, Madurai</p>
+      <p><FontAwesomeIcon icon={faLocationDot} /><br/> DesignDot Academy, Madurai</p>
     </div>
     <div className="contact-box">
       <p><FontAwesomeIcon icon={faPhone} /><br/>+91 98765 43210</p>
     </div>
     <div className="contact-box">
-      <p><FontAwesomeIcon icon={faEnvelope} /><br/>info@buffcreativecollege<br/>.com</p>
+      <p><FontAwesomeIcon icon={faEnvelope} /><br/>info@designdotacademy.<br/>com</p>
     </div>
   </div>
 </div>
