@@ -120,13 +120,19 @@
    
 
     .form-verify button {
-      background-color:rgb(210, 203, 255);
+      background-color:#45a049;
       color: white;
       cursor: pointer;
       font-weight: bold;
       transition: background 0.3s;
     }
-
+    .form-verify button:disabled {
+      background-color: rgb(210, 203, 255);
+      cursor: not-allowed;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
     .form-group button:hover {
       background-color: #45a049;
     }

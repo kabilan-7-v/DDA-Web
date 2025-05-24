@@ -14,6 +14,9 @@ import AppPrice from "../Pages/Servicespage/AppPrice";
 import BrandingPrice from "../Pages/Servicespage/BrandingPrice";
 import Graphic from "../Pages/Servicespage/Graphic";
 import UxUiPrice from "../Pages/Servicespage/UxUiPrice";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function Routerpage() {
   return (
@@ -33,6 +36,7 @@ function Routerpage() {
 
 
       </Routes>
+      <ToastContainer />
     </BrowserRouter>
   );
 }
