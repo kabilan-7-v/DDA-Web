@@ -33,12 +33,12 @@ function Homepage() {
         <div className='banner'>
           <div className='black-banner'></div>
           <div className='banner-content'>
-            <p className="p1">About Our Company</p>
+            <p className="a-p1">About Our Company</p>
             <h1>
               Make Your Business <span>Unmissable Online</span>
             </h1>
             <p className="p2">
-              We turn clicks into customers with expert design and marketing..
+              We turn clicks into customers through expert design, development, and branding.
             </p>
             {/* <button className="banner-b1">
               Free Consultation <img src={arrow} alt="arrow" />

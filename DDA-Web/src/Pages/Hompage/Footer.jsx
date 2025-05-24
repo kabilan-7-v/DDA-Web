@@ -20,10 +20,10 @@ function Footer() {
     <div class="footer-col">
       <h3>Pages</h3>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="/#">Home</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contactus">Contact Us</a></li>
       </ul>
     </div>
 

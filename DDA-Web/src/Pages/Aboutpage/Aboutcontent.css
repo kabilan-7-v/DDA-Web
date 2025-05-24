@@ -74,8 +74,8 @@
   .image-ab{
     width: 50%;
     height:700px;
+    object-fit: cover;
     
-    display: flex;
     align-items: center;
     
     
@@ -95,7 +95,10 @@
   
   .image-ab img{
     width: 85%;
-    border-radius: 50px;
+  height: 700px;
+  border-radius: 50px;
+  object-fit: cover; 
+  margin-right: 60px;
   }
   @media (max-width: 768px) {
   .image-ab img {

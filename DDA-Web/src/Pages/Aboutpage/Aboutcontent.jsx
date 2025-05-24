@@ -1,5 +1,6 @@
 import React from 'react'
 import './Aboutcontent.css'
+import sir from '../../assets/image/sir.jpg'; 
 
 function Aboutcontent() {
   return (
@@ -9,8 +10,9 @@ function Aboutcontent() {
         <div className="about-ab-image p-0">
           <div className="image-ab">
             <img
-              src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/about-us-img.jpg"
-            />
+                          src={sir}
+                          alt="About Us"
+                        />
           </div>
           <div className="about-ab-content">
             

@@ -51,20 +51,17 @@ function ChooseUs() {
           <p>At DesignDot Acadamy, we create innovative, user-focused web solutions that <br /> combine sleek design with powerful functionality—helping businesses grow and <br /> stand out in the digital world.</p>
           <h4>Let’s build the future—together.</h4>
           <div className="ycard2-b1">
-      <button>
+   <a href=' https://www.linkedin.com/company/designdotacademy/'>   <button>
         
         LinkedIn
         <FontAwesomeIcon icon={faArrowRight} />
-      </button>
-      <button>
+      </button></a>
+    <a href='https://www.instagram.com/designdot_academy/profilecard/?igsh=MXRoOXhyOHhxdDdwZQ=='> <button>
         
         Instagram
         <FontAwesomeIcon icon={faArrowRight} />
-      </button>
-      <button>
-        Contact Us
-        <FontAwesomeIcon icon={faArrowRight} />
-      </button>
+      </button></a> 
+      
     </div>
        
 

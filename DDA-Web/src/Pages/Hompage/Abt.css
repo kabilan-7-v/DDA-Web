@@ -58,40 +58,43 @@
       display: block;
   }
 }
-.image{
-    width: 50%;
-    height:700px;
-    
-    display: flex;
-    align-items: center;
-    
-    
+.image {
+  width: 50%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 @media (max-width: 1024px) {
   .image {
     height: auto;
   }
 }
+
 @media (max-width: 768px) {
   .image {
     width: 100%;
     margin-top: 30px;
-      
   }
 }
 
-.image img{
-    width: 85%;
-    border-radius: 50px;
+.image img {
+  width: 85%;
+  height: 600px;
+  border-radius: 50px;
+  object-fit: cover; 
+  margin-right: 60px;
 }
+
 @media (max-width: 768px) {
   .image img {
-    width: 100%;
-      
-      margin-bottom: -150px;
-      
+    width: 85%; 
+    height: 600px; 
+    margin-bottom: -150px;
   }
 }
+
 .about-content{
     width: 50%;
     height:700px;

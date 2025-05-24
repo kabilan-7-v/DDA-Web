@@ -30,11 +30,11 @@ body, .banner-content, h1, p, button {
     background-color:transparent ;
     text-align: center;
 }
-.p1{
+.a-p1{
  color: var(--blue);
  background-color: transparent;
- font-size: 20px;
- font-weight: 500;
+ font-size: 25px;
+ font-weight: 800;
 }
 .banner-content h1{
     background-color: transparent;

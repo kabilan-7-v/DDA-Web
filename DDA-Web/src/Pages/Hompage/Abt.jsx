@@ -1,6 +1,6 @@
 import React from 'react';
 import './Abt.css';
-
+import sir from '../../assets/image/sir.jpg'; 
 function Abt() {
   return (
     <>
@@ -15,7 +15,7 @@ function Abt() {
         <div className="container about-image p-0">
           <div className="image">
             <img
-              src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/about-us-img.jpg"
+              src={sir}
               alt="About Us"
             />
           </div>
