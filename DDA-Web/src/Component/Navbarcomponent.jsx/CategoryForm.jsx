@@ -291,6 +291,7 @@ const handlePayment = async (amount) => {
                 borderRadius: 6,
                 border: "1.5px solid #ccc",
                 transition: "border-color 0.3s",
+                
               }}
               onFocus={(e) => (e.target.style.borderColor = "#007bff")}
               onBlur={(e) => (e.target.style.borderColor = "#ccc")}

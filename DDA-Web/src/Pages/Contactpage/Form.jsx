@@ -75,10 +75,10 @@ function Form() {
       <p><FontAwesomeIcon icon={faLocationDot} /><br/> DesignDot Academy, Madurai</p>
     </div>
     <div className="contact-box">
-      <p><FontAwesomeIcon icon={faPhone} /><br/>+91 98765 43210</p>
+      <p><FontAwesomeIcon icon={faPhone} /><br/>+91 74115 71410</p>
     </div>
     <div className="contact-box">
-      <p><FontAwesomeIcon icon={faEnvelope} /><br/>info@designdotacademy.<br/>com</p>
+      <p><FontAwesomeIcon icon={faEnvelope} /><br/>info@designdotacademy<br/>com</p>
     </div>
   </div>
 </div>

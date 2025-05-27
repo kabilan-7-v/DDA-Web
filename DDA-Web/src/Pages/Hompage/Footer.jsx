@@ -12,8 +12,8 @@ function Footer() {
       <img src= {Logo} alt="DesignDot Logo" class="footer-logo" />
       
       <p class="tagline">Creating Web Experiences Fit for Royalty</p>
-      <p class="email">designdotacademy.com</p>
-      <p class="phone">+91 92222 52222</p>
+      <p class="email">info@designdotacademy.com</p>
+      <p class="phone">+91 74115 71410</p>
     </div>
 
     
@@ -31,9 +31,9 @@ function Footer() {
     <div class="footer-col">
       <h3>Social</h3>
       <ul>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Whatsapp</a></li>
-        <li><a href="#">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/designdot_academy/profilecard/?igsh=MXRoOXhyOHhxdDdwZQ==">Instagram</a></li>
+        
+        <li><a href="https://www.linkedin.com/company/designdotacademy/">LinkedIn</a></li>
       </ul>
     </div>
 
@@ -41,10 +41,11 @@ function Footer() {
     <div class="footer-col">
       <h3>Services</h3>
       <ul>
-        <li><a href="#">Web Development</a></li>
-        <li><a href="#">Digital Marketing</a></li>
-        <li><a href="#">Game Development</a></li>
-        <li><a href="#">Mobile App Development</a></li>
+        <li><a href="/webdevelopment">Web Development</a></li>
+        <li><a href="/app-price">App Development</a></li>
+        <li><a href="/graphic">Graphic Design </a></li>
+        <li><a href="/uxui-price">UIUX Design</a></li>
+        <li><a href="/branding-price">Branding Design</a></li>
       </ul>
     </div>
   </div>
