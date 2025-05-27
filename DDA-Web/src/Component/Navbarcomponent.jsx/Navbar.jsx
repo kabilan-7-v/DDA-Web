@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/image/logo.png';
 import { Link } from 'react-router-dom';
+import LoggedInUser from './Loggedinicon';
+import LogoutButton from '../LoggedOut';
 
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -36,6 +38,7 @@ function Navbar() {
               <li><Link to="/aboutus" onClick={closeMenu}>About us</Link></li>
               <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
               <li><Link to="/contactus" onClick={closeMenu}>Contact Us</Link></li>
+              <LogoutButton></LogoutButton>
             </ul>
           </nav>
         </div>

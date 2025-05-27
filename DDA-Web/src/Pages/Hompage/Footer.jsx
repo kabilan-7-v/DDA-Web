@@ -1,8 +1,16 @@
 import React from 'react'
 import './Footer.css'
 import Logo from '../../assets/image/logo.png'; 
-
+import { Link } from 'react-router-dom';
 function Footer() {
+  const linkStyle = {
+    textDecoration: "none",
+    color: "#888",
+  };
+  
+  const liStyle = {
+    cursor: "pointer",
+  };
   return (
     <>
     <footer class="footer">
@@ -31,9 +39,8 @@ function Footer() {
     <div class="footer-col">
       <h3>Social</h3>
       <ul>
-        <li><a href="https://www.instagram.com/designdot_academy/profilecard/?igsh=MXRoOXhyOHhxdDdwZQ==">Instagram</a></li>
-        
-        <li><a href="https://www.linkedin.com/company/designdotacademy/">LinkedIn</a></li>
+        <li><a href=' https://www.linkedin.com/company/designdotacademy/'>Instagram</a></li>
+        <li><a href='https://www.linkedin.com/company/designdotacademy/'> LinkedIn</a></li>
       </ul>
     </div>
 
@@ -41,11 +48,24 @@ function Footer() {
     <div class="footer-col">
       <h3>Services</h3>
       <ul>
-        <li><a href="/webdevelopment">Web Development</a></li>
-        <li><a href="/app-price">App Development</a></li>
-        <li><a href="/graphic">Graphic Design </a></li>
-        <li><a href="/uxui-price">UIUX Design</a></li>
-        <li><a href="/branding-price">Branding Design</a></li>
+      <Link to="/webdevelopment" style={linkStyle}>
+  <li>Web Development</li>
+</Link>
+
+<Link to="/branding-price" style={linkStyle}>
+  <li>Branding</li>
+</Link>
+
+<Link to="/app-price" style={linkStyle}>
+  <li>Mobile App Development</li>
+</Link>
+
+<Link to="/graphic" style={linkStyle}>
+  <li>Graphic Design</li>
+</Link>
+
+
+
       </ul>
     </div>
   </div>
