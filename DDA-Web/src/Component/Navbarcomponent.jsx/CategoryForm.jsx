@@ -103,26 +103,26 @@ const handlePayment = async (amount) => {
     return;
   }
 
-  const { data: order } = await axios.post('http://localhost:5000/api/payment/create-order', {
+  const { data: order } = await axios.post('https://dda-backend-xskh.onrender.com/api/payment/create-order', {
     amount: amount,
   });
  
   const options = {
-    key: 'rzp_live_amqPFi6ouaxEqd', // Replace with Razorpay key
+    key: 'rzp_live_K0i9ysc1ahVHX6', // Replace with Razorpay key
     amount: order.amount,
     currency: order.currency,
     name: 'DesignDot Acadamey',
     description: 'Test Transaction',
     order_id: order.id,
     handler: async function (response) {
-      const verifyRes = await axios.post('http://localhost:5000/api/payment/verify', {
+      const verifyRes = await axios.post('https://dda-backend-xskh.onrender.com/api/payment/verify', {
         razorpay_order_id: response.razorpay_order_id,
         razorpay_payment_id: response.razorpay_payment_id,
         razorpay_signature: response.razorpay_signature,
       });
 
       if (verifyRes.data.success) {
-       await axios.post('http://localhost:5000/api/purchases', {
+       await axios.post('https://dda-backend-xskh.onrender.com/api/purchases', {
           "name":name.toString(),
           "email": email.toString(),
           "emailStatus": emailVerified.toString(),
@@ -167,7 +167,7 @@ const handlePayment = async (amount) => {
     
     const newOtp = generateOtp();
     setOtp(newOtp);
-    await axios.post('http://localhost:5000/api/mail/send', 
+    await axios.post('https://dda-backend-xskh.onrender.com/api/mail/send', 
       {
         "to": email,
         "subject": "Design Dot Acadamecy ",
@@ -213,7 +213,45 @@ const handlePayment = async (amount) => {
 
   return (
     <>
-      <div
+    <style>
+    {`
+  @media (max-width: 768px) {
+    .outter-box {
+      width: 90%;
+      height: 80%;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap:0px !important;
+
+    }
+
+    .rightside {
+      padding: 0;
+      margin-left: 0;
+    }
+
+     .gap {
+    height: 0px !important;
+  }
+
+    .packageselect {
+      width: 85%;
+    }
+
+    .category {
+      width: 85%;
+    }
+
+    .categoryser {
+      padding: 0px;
+      margin-top: 0px;
+    }
+  }
+  `}
+      
+    </style>
+      <div className="outter-box"
         style={{
           maxWidth: 1300,
           margin: "2rem auto",
@@ -249,7 +287,7 @@ const handlePayment = async (amount) => {
     </button>
         {/* Left Side: User Info */}
         <div style={{ flex: "1 1 300px", minWidth: 280 }}>
-          <h2 style={{ marginBottom: "1.5rem", color: "#007bff" }}>👤 Your Details</h2>
+          <h2 style={{ marginBottom: "1.5rem", color: "#007bff" }}>Service Form</h2>
 
           <label style={{ display: "block", marginBottom: 6, fontWeight: 600 }}>
             Name
@@ -299,6 +337,7 @@ const handlePayment = async (amount) => {
               onClick={sendVerificationEmail}
               disabled={!email || emailVerified}
               style={{
+                
                 padding: "10px 16px",
                 backgroundColor: emailVerified ? "#28a745" : "#007bff",
                 color: "white",
@@ -374,7 +413,6 @@ const handlePayment = async (amount) => {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             style={{
-              width: "100%",
               padding: "10px 14px",
               fontSize: 16,
               borderRadius: 6,
@@ -388,19 +426,26 @@ const handlePayment = async (amount) => {
         </div>
 
         {/* Right Side: Service Selection */}
-        <div style={{ flex: "1 1 400px", minWidth: 320,  marginLeft:40}}>
 
-          <label style={{ display: "block", marginBottom: 6, fontWeight: 600,marginTop:50 }}>
-            📂 Select Service Category
-          </label>
+        <div className="rightside" style={{ flex: "1 1 400px", minWidth: 320, }}>
+          <div className="gap" style={{height:"50px",
+          }
+          }></div>
+
+        <label
+  className="categoryser"
+  style={{ display: "block", marginBottom: 6, fontWeight: 600, }}
+>
+  📂 Select Service Category
+</label>
           <select
+          className="category"
             value={mainCategory}
             onChange={(e) => {
               setMainCategory(e.target.value);
               setSubCategory("");
             }}
             style={{
-              width: "100%",
               padding: "14px 14px",
               fontSize: 16,
               borderRadius: 6,
@@ -423,11 +468,11 @@ const handlePayment = async (amount) => {
             📁 Select Specific Service
           </label>
           <select
+          className="category"
             value={subCategory}
             onChange={(e) => setSubCategory(e.target.value)}
             disabled={!mainCategory}
             style={{
-              width: "100%",
               padding: "10px 14px",
               fontSize: 16,
               borderRadius: 6,
@@ -454,17 +499,17 @@ const handlePayment = async (amount) => {
           <label style={{ display: "block", marginBottom: 6, fontWeight: 600 }}>
             💰 Select Package
           </label>
-          <select
+          <select className="packageselect"
             value={selectedPackage}
             onChange={(e) => setSelectedPackage(e.target.value)}
             style={{
-              width: "100%",
               padding: "10px 14px",
               fontSize: 16,
               borderRadius: 6,
               border: "1.5px solid #ccc",
               marginBottom: 20,
               transition: "border-color 0.3s",
+
             }}
             onFocus={(e) => (e.target.style.borderColor = "#007bff")}
             onBlur={(e) => (e.target.style.borderColor = "#ccc")}
@@ -490,11 +535,11 @@ const handlePayment = async (amount) => {
             }
             style={{
               marginTop:10,
-              width: "100%",
               padding: "14px 0",
               fontSize: 18,
               fontWeight: 600,
               color: "white",
+              width:"85%",
               backgroundColor:
                 name &&
                 email &&

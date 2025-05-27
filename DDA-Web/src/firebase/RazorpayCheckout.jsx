@@ -18,7 +18,7 @@ const RazorpayCheckout = () => {
       return;
     }
 
-    const { data: order } = await axios.post('http://localhost:5000/api/payment/create-order', {
+    const { data: order } = await axios.post('https://dda-backend-xskh.onrender.com/api/payment/create-order', {
       amount: 1,
     });
 
@@ -30,7 +30,7 @@ const RazorpayCheckout = () => {
       description: 'Test Transaction',
       order_id: order.id,
       handler: async function (response) {
-        const verifyRes = await axios.post('http://localhost:5000/api/payment/verify', {
+        const verifyRes = await axios.post('https://dda-backend-xskh.onrender.com/api/payment/verify', {
           razorpay_order_id: response.razorpay_order_id,
           razorpay_payment_id: response.razorpay_payment_id,
           razorpay_signature: response.razorpay_signature,
