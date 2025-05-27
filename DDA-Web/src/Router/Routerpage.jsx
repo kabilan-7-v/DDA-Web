@@ -16,11 +16,16 @@ import Graphic from "../Pages/Servicespage/Graphic";
 import UxUiPrice from "../Pages/Servicespage/UxUiPrice";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Register from "../Pages/Auth/Registerpage";
+import LoginPage from "../Pages/Auth/LoginPage";
 
 
 function Routerpage() {
   return (
+    <>
+    
     <BrowserRouter>
+
       <Routes>
         <Route path="/" element={<Homepage></Homepage>}></Route>
         <Route path="/aboutus" element={<AboutPage></AboutPage>}></Route>
@@ -33,11 +38,15 @@ function Routerpage() {
         <Route path="/branding-price" element={<BrandingPrice></BrandingPrice>} ></Route>
         <Route path="/graphic" element={<Graphic></Graphic>} ></Route>
         <Route path="/uxui-price" element={<UxUiPrice></UxUiPrice>} ></Route>
+        <Route path="/login" element={<LoginPage></LoginPage>}> </Route>
+        <Route path="/register" element={<Register/>} ></Route>
+
+
 
 
       </Routes>
       <ToastContainer />
-    </BrowserRouter>
+    </BrowserRouter></>
   );
 }
 

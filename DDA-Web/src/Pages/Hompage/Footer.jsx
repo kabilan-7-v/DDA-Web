@@ -39,9 +39,8 @@ function Footer() {
     <div class="footer-col">
       <h3>Social</h3>
       <ul>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Whatsapp</a></li>
-        <li><a href="#">LinkedIn</a></li>
+        <li><a href=' https://www.linkedin.com/company/designdotacademy/'>Instagram</a></li>
+        <li><a href='https://www.linkedin.com/company/designdotacademy/'> LinkedIn</a></li>
       </ul>
     </div>
 
