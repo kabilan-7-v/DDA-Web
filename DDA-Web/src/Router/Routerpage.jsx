@@ -19,6 +19,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Register from "../Pages/Auth/Registerpage";
 import LoginPage from "../Pages/Auth/LoginPage";
 import SignIn from "../Pages/Hompage/SignIn";
+import SignUp from "../Pages/Hompage/SignUp";
 
 
 function Routerpage() {
@@ -42,6 +43,9 @@ function Routerpage() {
         <Route path="/login" element={<LoginPage></LoginPage>}> </Route>
         <Route path="/register" element={<Register/>} ></Route>
         <Route path="/SignIn" element={<SignIn/>} ></Route>
+        <Route path="/SignUp" element={<SignUp></SignUp>} ></Route>
+        
+
 
 
 
