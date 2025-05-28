@@ -39,6 +39,7 @@ function Navbar() {
               <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
               <li><Link to="/contactus" onClick={closeMenu}>Contact Us</Link></li>
               <LogoutButton></LogoutButton>
+             <a href='signIn'><p>SignIn</p></a>
             </ul>
           </nav>
         </div>

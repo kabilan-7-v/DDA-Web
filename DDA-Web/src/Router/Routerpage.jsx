@@ -18,6 +18,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Register from "../Pages/Auth/Registerpage";
 import LoginPage from "../Pages/Auth/LoginPage";
+import SignIn from "../Pages/Hompage/SignIn";
 
 
 function Routerpage() {
@@ -40,6 +41,8 @@ function Routerpage() {
         <Route path="/uxui-price" element={<UxUiPrice></UxUiPrice>} ></Route>
         <Route path="/login" element={<LoginPage></LoginPage>}> </Route>
         <Route path="/register" element={<Register/>} ></Route>
+        <Route path="/SignIn" element={<SignIn/>} ></Route>
+
 
 
 

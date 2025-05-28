@@ -1,6 +1,6 @@
 import React from 'react'
 import './UxUiPrice.css'
-import ABcomm from '../../assets/image/e-comm.jpg';
+import uiux from '../../assets/image/ui-ux.jpg';
 import PackUxUiPrice from '../../Pages/Servicespage/PackUxUiPrice.jsx';
 import Navbar from '../../Component/Navbarcomponent.jsx/Navbar'
 import ChooseUs from '../../Pages/Hompage/ChooseUs.jsx';
@@ -16,10 +16,10 @@ function UxUiPrice() {
       link: '/webdevelopment'
     },
     {
-      title: 'App Development',
+      title: 'Branding Design',
       description: 'Smart, user-friendly mobile applications for Android and iOS platforms.',
-      image: 'https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-2.jpg',
-      link: '/app-price'
+      image: 'https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-5.jpg',
+      link: 'branding-price'
     },
     {
       title: 'Graphic Design',
@@ -35,7 +35,7 @@ function UxUiPrice() {
                   <div className="about-ux p-0">
                 <div className="container about-ux-image p-0">
                   <div className="image-ux">
-                    <img src={ABcomm} />
+                    <img src={uiux} />
                    
                   </div>
                   <div className="about-ux-content">

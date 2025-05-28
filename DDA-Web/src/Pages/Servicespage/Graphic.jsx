@@ -1,6 +1,6 @@
 import React from 'react'
 import './Graphic.css'
-import ABcomm from '../../assets/image/e-comm.jpg';
+import graphic from '../../assets/image/graphic.jpg';
 import PackGraphic from '../../Pages/Servicespage/PackGraphic.jsx';
 import Navbar from '../../Component/Navbarcomponent.jsx/Navbar'
 import ChooseUs from '../../Pages/Hompage/ChooseUs.jsx';
@@ -35,7 +35,7 @@ function Graphic() {
                   <div className="about-gr p-0">
                 <div className="container about-gr-image p-0">
                   <div className="image-gr">
-                    <img src={ABcomm} />
+                    <img src={graphic} />
                    
                   </div>
                   <div className="about-gr-content">

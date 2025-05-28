@@ -147,8 +147,6 @@ line-height: 50px;
   margin-bottom: 50px;
   text-align: center;
   color: white;
-  margin-left: 75px;
-  margin-right:75px;
   
   
 }
@@ -181,7 +179,7 @@ line-height: 50px;
   font-size:20px;
 }
 
-.package2-top h3{
+.package2 top h3{
     font-size: 25px;
     margin-bottom: 20px;
     color: white;

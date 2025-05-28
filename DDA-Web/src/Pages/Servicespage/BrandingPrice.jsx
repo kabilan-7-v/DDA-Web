@@ -1,6 +1,6 @@
 import React from 'react'
 import './BrandingPrice.css'
-import ABcomm from '../../assets/image/e-comm.jpg';
+import brand from '../../assets/image/branding.jpg';
 import PackBranding from '../../Pages/Servicespage/PackBranding.jsx';
 import Navbar from '../../Component/Navbarcomponent.jsx/Navbar'
 import ChooseUs from '../../Pages/Hompage/ChooseUs.jsx';
@@ -34,12 +34,12 @@ function BrandingPrice() {
                   <div className="about-br p-0">
                 <div className="container about-br-image p-0">
                   <div className="image-br">
-                    <img src={ABcomm} />
+                    <img src={brand} />
                    
                   </div>
                   <div className="about-br-content">
                     <div className="para-br">
-                      <p className="about-br-p1">Branding Package </p>
+                      <p className="about-br-p1">Branding Design </p>
                       <h1 className="about-br-h1">
                         Creating brand identities that make an impact.
                       </h1>
