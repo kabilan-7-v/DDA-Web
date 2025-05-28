@@ -5,6 +5,10 @@
   --blue:#003add;
   --lightblue:#F7F8FD;
 }
+Link {
+  text-decoration: none;
+  color: inherit;
+}
 
 
 
