@@ -74,9 +74,8 @@ const CategoryForm = () => {
   const [emailVerified, setEmailVerified] = useState(false);
   const [isemailVerifiedclick, setIsEmailVerified] = useState(false);
   const [otptext, setOtptext] = useState("");
-  const [isloading,setIsloading] = useState(false);
-  const [isloadingpayment,setIsloadingpayment] = useState(false);
-
+  const [isloading, setIsloading] = useState(false);
+  const [isloadingpayment, setIsloadingpayment] = useState(false);
 
   const [mainCategory, setMainCategory] = useState("");
   const [subCategory, setSubCategory] = useState("");
@@ -186,7 +185,6 @@ const CategoryForm = () => {
     setIsEmailVerified(true);
 
     toast.info(`Verification email sent to ${email}`);
-
   };
 
   const handlePurchase = async () => {
@@ -507,11 +505,13 @@ const CategoryForm = () => {
                 e.target.style.backgroundColor = "#007bff";
             }}
           >
-    {isloading ? (
-    <CircularLoader />
-  ) : (
-    !emailVerified ? "Submit & Get OTP" : "Email verified"
-  )}
+            {isloading ? (
+              <CircularLoader />
+            ) : !emailVerified ? (
+              "Submit & Get OTP"
+            ) : (
+              "Email verified"
+            )}
           </button>
         </div>
         {/* Right Side: Service Selection */}
@@ -651,7 +651,7 @@ const CategoryForm = () => {
               onChange={(e) => setSelectedPackage(e.target.value)}
               style={{
                 width: "100%",
-                backgroundColor:"white",
+                backgroundColor: "white",
 
                 padding: "18px 14px",
                 fontSize: 16,
@@ -732,6 +732,7 @@ const CategoryForm = () => {
                 name &&
                 email &&
                 phone &&
+                
                 emailVerified &&
                 mainCategory &&
                 subCategory &&
@@ -765,7 +766,7 @@ const CategoryForm = () => {
                 e.target.style.backgroundColor = "#007bff";
             }}
           >
-        {isloadingpayment?(<CircularLoader/> ) : ( "Purchase Now")}
+            {isloadingpayment ? <CircularLoader /> : "Purchase Now"}
           </button>
         </div>
       </div>
