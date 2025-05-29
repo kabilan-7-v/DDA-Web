@@ -250,7 +250,7 @@ function Form() {
                   <p>
                     <FontAwesomeIcon icon={faPhone} />
                     <br />
-                    +91 98765 43210
+                    +91 74115 71410
                   </p>
                 </div>
                 <div className="contact-box">
