@@ -36,7 +36,7 @@ function Form() {
   };
   const verifyotp =async () => {
     if (otptext === parseInt(otp1 + otp2 + otp3 + otp4 + otp5 + otp6)) {
-      await axios.post("http://localhost:5000/api/contacts",{
+      await axios.post("https://dda-backend-xskh.onrender.com/api/contacts",{
         "fullName":name,
         "email":email,
         "phoneNumber":phone,
@@ -49,6 +49,7 @@ function Form() {
       setEmailVerified(true);
 
       toast.success("We get you back soon ...");
+      
      
     } else {
       alert("Invalid OTP");
@@ -226,7 +227,7 @@ function Form() {
               />
             </div>
             <div className="form-verify">
-            <button type="submit" onClick={verifyotp} disabled={!isOtpComplete}>
+            <button type="button" onClick={verifyotp} disabled={!isOtpComplete}>
               Verify
             </button>
             </div>

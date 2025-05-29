@@ -2,8 +2,42 @@ import React from 'react'
 import'./PackWebdesign.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faCircleCheck, faIndianRupee } from '@fortawesome/free-solid-svg-icons';
+import { toast } from 'react-toastify';
+import { handlePayment } from "../../utils/razorpayUtils";
 
 function PackWebdesign() {
+  const startPayment = async (amountInRupees) => {
+    const userData = localStorage.getItem("userData");
+  
+    if (!userData) {
+      setLoading(false);
+      toast.error("Sign in to Continue");
+
+      return;
+    }
+  
+    const user = JSON.parse(userData);
+  toast.success("Please wait payment initialized")
+    await handlePayment({
+
+      amount: amountInRupees , // Convert to paise
+      userDetails: {
+        name: user.name,
+        email: user.email,
+        phone: user.phone,
+      },
+      categoryDetails: {
+        mainCategory: "Graphics",
+        subCategory: "Design",
+      },
+      onSuccess: () => {
+        toast.success("Payment completed successfully");
+      },
+      onFailure: () => {
+        toast.error("Payment failed");
+      },
+    });
+  };
     
   return (
     <>
@@ -31,7 +65,7 @@ function PackWebdesign() {
               </div>
               <hr />
               <div className="pack-wd-button">
-                <button>Choose Basic <FontAwesomeIcon icon={faArrowRight} /></button>
+                <button  onClick={() => startPayment(1)}>Choose Basic <FontAwesomeIcon icon={faArrowRight} /></button>
               </div>
             </div>
             <div className="package2-wd">

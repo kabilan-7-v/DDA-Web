@@ -18,12 +18,6 @@ function Homepage() {
   const isVisible = useSelector((state) => state.popup.visible);
 
   // Show popup after 5 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      dispatch(showPopup());
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, [dispatch]);
 
   return (
     <>

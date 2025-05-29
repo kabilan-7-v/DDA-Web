@@ -61,7 +61,7 @@ const serviceData = [
        <div className='scard01'>
             <div className='scard01-top'>
             <h2>E- <br />Commerce</h2>
-            <div class="scard01-btn">
+            <div className="scard01-btn">
                   <button><img src={arrow} alt="Description" /></button>
                 </div>
     
@@ -74,7 +74,7 @@ const serviceData = [
                   architecto beatae
                 </p>
               </div>
-              <div class="scard01-image">
+              <div className="scard01-image">
               <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg" />
             </div>
     
@@ -83,7 +83,7 @@ const serviceData = [
         <div className='scard01'>
             <div className='scard01-top'>
             <h2>Business <br /> Website</h2>
-            <div class="scard01-btn">
+            <div className="scard01-btn">
                   <button><img src={arrow} alt="Description" /></button>
                 </div>
     
@@ -96,7 +96,7 @@ const serviceData = [
                   architecto beatae
                 </p>
               </div>
-              <div class="scard01-image">
+              <div className="scard01-image">
               <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-2.jpg" />
             </div>
     
@@ -104,7 +104,7 @@ const serviceData = [
         <div className='scard01'>
             <div className='scard01-top'>
             <h2>Portfolio <br /> Website</h2>
-            <div class="scard01-btn">
+            <div className="scard01-btn">
                   <button><img src={arrow} alt="Description" /></button>
                 </div>
     
@@ -117,7 +117,7 @@ const serviceData = [
                   architecto beatae
                 </p>
               </div>
-              <div class="scard01-image">
+              <div className="scard01-image">
               <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-2.jpg" />
             </div>
     
@@ -125,7 +125,7 @@ const serviceData = [
         <div className='scard01'>
             <div className='scard01-top'>
             <h2>Personal <br /> Website</h2>
-            <div class="scard01-btn">
+            <div className="scard01-btn">
                   <button><img src={arrow} alt="Description" /></button>
                 </div>
     
@@ -138,7 +138,7 @@ const serviceData = [
                   architecto beatae
                 </p>
               </div>
-              <div class="scard01-image">
+              <div className="scard01-image">
               <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-2.jpg" />
             </div>
     
@@ -146,7 +146,7 @@ const serviceData = [
         <div className='scard01'>
             <div className='scard01-top'>
             <h2>Event <br /> Website</h2>
-            <div class="scard01-btn">
+            <div className="scard01-btn">
                   <button><img src={arrow} alt="Description" /></button>
                 </div>
     
@@ -159,7 +159,7 @@ const serviceData = [
                   architecto beatae
                 </p>
               </div>
-              <div class="scard01-image">
+              <div className="scard01-image">
               <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-2.jpg" />
             </div>
     
@@ -167,7 +167,7 @@ const serviceData = [
         <div className='scard01'>
             <div className='scard01-top'>
             <h2>Educational <br /> Website</h2>
-            <div class="scard01-btn">
+            <div className="scard01-btn">
                   <button><img src={arrow} alt="Description" /></button>
                 </div>
     
@@ -180,7 +180,7 @@ const serviceData = [
                   architecto beatae
                 </p>
               </div>
-              <div class="scard01-image">
+              <div className="scard01-image">
               <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-2.jpg" />
             </div>
     

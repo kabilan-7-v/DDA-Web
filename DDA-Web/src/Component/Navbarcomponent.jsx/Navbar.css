@@ -89,9 +89,9 @@
   color: var(--blue);
 }
 
-.menu a:hover::after {
+/* .menu a:hover::after {
   width: 100%;
-}
+} */
 
 /* Hamburger */
 .hamburger {
