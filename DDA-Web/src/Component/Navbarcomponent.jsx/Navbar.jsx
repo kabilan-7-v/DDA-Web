@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import './Navbar.css';
 import logo from '../../assets/image/logo.png';
 import { Link } from 'react-router-dom';
@@ -10,6 +10,18 @@ function Navbar() {
 
   const toggleMenu = () => setMenuOpen(!isMenuOpen);
   const closeMenu = () => setMenuOpen(false);
+  const [islogin,setIslogin] =  useState(false);
+  useEffect(()=>{
+    const login = localStorage.getItem("userData");
+    if (login){
+      setIslogin(true);
+    }
+    else{
+      setIslogin(false);
+    }
+
+  },[])
+
 
   return (
     <div className="container-fluid topbar p-0 ">
@@ -38,9 +50,9 @@ function Navbar() {
               <li><Link to="/aboutus" onClick={closeMenu}>About us</Link></li>
               <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
               <li><Link to="/contactus" onClick={closeMenu}>Contact Us</Link></li>
-              <LogoutButton></LogoutButton>
-             <a href='/signIn'><p>Sign In</p></a>
-             <a href='/SignUp'> <p>Sign Up</p> </a>
+           {islogin?(<LogoutButton></LogoutButton>):
+            ( <a href='/signIn'><p>Sign In</p></a>)}
+             
             </ul>
           </nav>
         </div>

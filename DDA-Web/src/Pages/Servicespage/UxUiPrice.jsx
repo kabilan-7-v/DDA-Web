@@ -28,6 +28,7 @@ function UxUiPrice() {
       link: '/graphic'
     }
   ];
+  
   return (
     <>
     <Navbar></Navbar>

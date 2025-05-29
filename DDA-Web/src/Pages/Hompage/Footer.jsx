@@ -13,19 +13,19 @@ function Footer() {
   };
   return (
     <>
-    <footer class="footer">
-  <div class="footer-container">
+    <footer className="footer">
+  <div className="footer-container">
     
-    <div class="footer-col logo-col">
-      <img src= {Logo} alt="DesignDot Logo" class="footer-logo" />
+    <div className="footer-col logo-col">
+      <img src= {Logo} alt="DesignDot Logo" className="footer-logo" />
       
-      <p class="tagline">Creating Web Experiences Fit for Royalty</p>
-      <p class="email">info@designdotacademy.com</p>
-      <p class="phone">+91 74115 71410</p>
+      <p className="tagline">Creating Web Experiences Fit for Royalty</p>
+      <p className="email">info@designdotacademy.com</p>
+      <p className="phone">+91 74115 71410</p>
     </div>
 
     
-    <div class="footer-col">
+    <div className="footer-col">
       <h3>Pages</h3>
       <ul>
         <li><a href="/#">Home</a></li>
@@ -36,7 +36,7 @@ function Footer() {
     </div>
 
     
-    <div class="footer-col">
+    <div className="footer-col">
       <h3>Social</h3>
       <ul>
         <li><a href=' https://www.linkedin.com/company/designdotacademy/'>Instagram</a></li>
@@ -45,7 +45,7 @@ function Footer() {
     </div>
 
     
-    <div class="footer-col">
+    <div className="footer-col">
       <h3>Services</h3>
       <ul>
       <Link to="/webdevelopment" style={linkStyle}>

@@ -2,35 +2,42 @@ import React, { useState } from 'react';
 import './PackEcomm.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck, faIndianRupee } from '@fortawesome/free-solid-svg-icons';
-import { useLocation } from "react-router-dom";
+import { toast } from 'react-toastify';
+import { handlePayment } from "../../utils/razorpayUtils";
 
 function PackEcomm() {
-  const location = useLocation();
-  const [showPopup, setShowPopup] = useState(false);
-  const [email, setEmail] = useState('');
-  const [otpSent, setOtpSent] = useState(false);
-  const [otp, setOtp] = useState('');
-  const [isVerified, setIsVerified] = useState(false);
+  const startPayment = async (amountInRupees) => {
+    const userData = localStorage.getItem("userData");
+  
+    if (!userData) {
+      toast.error("Sign in to Continue");
 
-  const handleChoose = () => {
-    setShowPopup(true);
-  };
-
-  const handleSendOTP = () => {
-    if (email.trim() === '') return alert("Please enter a valid email");
-    setOtpSent(true);
-    // In a real app, send OTP to email via backend here
-    console.log(`OTP sent to ${email}`);
-  };
-
-  const handleVerifyOTP = () => {
-    if (otp === '1234') { // Dummy OTP
-      setIsVerified(true);
-    } else {
-      alert("Invalid OTP");
+      return;
     }
-  };
+  
+    const user = JSON.parse(userData);
+  toast.success("Please wait payment initialized")
+    await handlePayment({
 
+      amount: amountInRupees , // Convert to paise
+      userDetails: {
+        name: user.name,
+        email: user.email,
+        phone: user.phone,
+      },
+      categoryDetails: {
+        mainCategory: "Web Development",
+        subCategory: "Ecommerce",
+      },
+      onSuccess: () => {
+        toast.success("Payment completed successfully");
+      },
+      onFailure: () => {
+        toast.error("Payment failed");
+      },
+    });
+  };
+  
   return (
     <>
       <div className='ecomm-price'>
@@ -58,7 +65,7 @@ function PackEcomm() {
               </div>
               <hr/>
               <div className="pack-button">
-                <button onClick={handleChoose}>Choose Basic</button>
+                <button  onClick={() => startPayment(1)}>Choose Basic</button>
               </div>
             </div>
             <div className="package2">
@@ -76,7 +83,7 @@ function PackEcomm() {
               </div>
                <hr />
               <div className="pack2-button">
-                <button onClick={handleChoose}>Choose Standard</button>
+                <button  onClick={() => startPayment(1)}>Choose Standard</button>
               </div>
             </div><div className="package1">
               <div className="package1-top"><h3>Premium Package</h3></div>
@@ -93,7 +100,7 @@ function PackEcomm() {
               </div>
               <hr/>
               <div className="pack-button">
-                <button onClick={handleChoose}>Choose Premium</button>
+                <button  onClick={() => startPayment(1)}>Choose Premium</button>
               </div>
             </div>
           </div>

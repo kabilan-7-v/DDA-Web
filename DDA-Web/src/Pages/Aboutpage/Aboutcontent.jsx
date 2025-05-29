@@ -21,7 +21,7 @@ function Aboutcontent() {
                 <h2 className="about-ab-h1">
                     DesignDot Academy Private Limited
                 </h2>
-              <p class="about-ab-content-p1">
+              <p classN="about-ab-content-p1">
                 
                 
                 DesignDot Academy Private Limited is a forward-thinking digital solutions company dedicated to bridging creativity, technology, and strategy. Founded with the mission to empower businesses and individuals through design and innovation, we offer a comprehensive range of services tailored to meet modern digital needs.<br /><br />

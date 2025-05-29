@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { FiLogOut } from 'react-icons/fi'; // Or use BiLogOut, MdLogout, etc.
 import { Link } from 'react-router-dom';
+import { Navigate } from "react-router-dom";
 
-const LogoutButton = ({ onLogout }) => {
+const LogoutButton = () => {
+  const logout =()=>{
+    localStorage.clear();
+    return <Navigate to="/signUp" replace />;
+
+
+  }
+
   return (
-    <Link to={"/register"}>
-    <button  style={styles.button}>
+    <Link to={"/signUp"}>
+    <button  style={styles.button} onClick={logout}>
       <FiLogOut style={styles.icon} />
       Logout
     </button>

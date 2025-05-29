@@ -2,8 +2,42 @@ import React from 'react'
 import './PackApp.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faCircleCheck, faIndianRupee } from '@fortawesome/free-solid-svg-icons';
+import { toast } from 'react-toastify';
+import { handlePayment } from "../../utils/razorpayUtils";
 
 function PackApp() {
+  const startPayment = async (amountInRupees) => {
+    const userData = localStorage.getItem("userData");
+  
+    if (!userData) {
+      toast.error("Sign in to Continue");
+
+      return;
+    }
+  
+    const user = JSON.parse(userData);
+  toast.success("Please wait payment initialized")
+    await handlePayment({
+
+      amount: amountInRupees , // Convert to paise
+      userDetails: {
+        name: user.name,
+        email: user.email,
+        phone: user.phone,
+      },
+      categoryDetails: {
+        mainCategory: "Graphics",
+        subCategory: "Design",
+      },
+      onSuccess: () => {
+        toast.success("Payment completed successfully");
+      },
+      onFailure: () => {
+        toast.error("Payment failed");
+      },
+    });
+  };
+  
   return (
     <>
     <div className='eweb-price'>
@@ -32,7 +66,7 @@ function PackApp() {
                   </div>
                   <hr />
                   <div className="pack-ap-button">
-                    <button>Choose Basic <FontAwesomeIcon icon={faArrowRight} /></button>
+                    <button  onClick={() => startPayment(1)}>Choose Basic <FontAwesomeIcon icon={faArrowRight} /></button>
                   </div>
                 </div>
                 <div className="package2-ap">
@@ -50,7 +84,7 @@ function PackApp() {
                   </div>
                   <hr />
                   <div className="pack2-ap-button">
-                    <button>Choose Standard <FontAwesomeIcon icon={faArrowRight} /></button>
+                    <button  onClick={() => startPayment(1)}>Choose Standard <FontAwesomeIcon icon={faArrowRight} /></button>
                   </div>
                 </div><div className="package1-ap">
                   <div className="package1-ap-top"><h3>Premium Package</h3></div>
@@ -67,7 +101,7 @@ function PackApp() {
                   </div>
                   <hr />
                   <div className="pack-ap-button">
-                    <button>Choose Basic <FontAwesomeIcon icon={faArrowRight} /></button>
+                    <button onClick={() => startPayment(1)}>Choose Basic <FontAwesomeIcon icon={faArrowRight} /></button>
                   </div>
                 </div>
               </div>

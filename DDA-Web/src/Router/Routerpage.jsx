@@ -7,7 +7,6 @@ import Contactpage from "../Pages/Contactpage/Contactpage";
 
 import Sevicespage from "../Pages/Servicespage/Sevicespage";
 import WebDevelopment from "../Pages/Servicespage/WebDevelopment";
-import Phoneverfications from "../firebase/Phoneverfications";
 import Portfoliopage from "../Pages/Portfolio/Portfoliopage";
 import WDprice from "../Pages/Servicespage/WDprice";
 import AppPrice from "../Pages/Servicespage/AppPrice";
@@ -16,8 +15,6 @@ import Graphic from "../Pages/Servicespage/Graphic";
 import UxUiPrice from "../Pages/Servicespage/UxUiPrice";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Register from "../Pages/Auth/Registerpage";
-import LoginPage from "../Pages/Auth/LoginPage";
 import SignIn from "../Pages/Hompage/SignIn";
 import SignUp from "../Pages/Hompage/SignUp";
 
@@ -27,6 +24,10 @@ function Routerpage() {
     <>
     
     <BrowserRouter>
+    <ToastContainer style={{
+      marginTop:"65px"
+    }} />
+
 
       <Routes>
         <Route path="/" element={<Homepage></Homepage>}></Route>
@@ -40,8 +41,6 @@ function Routerpage() {
         <Route path="/branding-price" element={<BrandingPrice></BrandingPrice>} ></Route>
         <Route path="/graphic" element={<Graphic></Graphic>} ></Route>
         <Route path="/uxui-price" element={<UxUiPrice></UxUiPrice>} ></Route>
-        <Route path="/login" element={<LoginPage></LoginPage>}> </Route>
-        <Route path="/register" element={<Register/>} ></Route>
         <Route path="/SignIn" element={<SignIn/>} ></Route>
         <Route path="/SignUp" element={<SignUp></SignUp>} ></Route>
         
@@ -52,7 +51,6 @@ function Routerpage() {
 
 
       </Routes>
-      <ToastContainer />
     </BrowserRouter></>
   );
 }

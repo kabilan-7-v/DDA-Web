@@ -7,14 +7,14 @@ function wrk() {
     <>
     {/* <div className='wrk-container'>
         <div className='wrk-sec'>
-        <div class="work-head">
-          <div class="work-headcontent">
-            <p class="work-p1">Our Works</p>
-            <h1 class="work-h1">
+        <div className="work-head">
+          <div className="work-headcontent">
+            <p className="work-p1">Our Works</p>
+            <h1 className="work-h1">
               Excellence from concept <br /> to completion
             </h1>
           </div>
-          <div class="work-b1">
+          <div className="work-b1">
             <button>
               All portfolio<img src={arrow} alt="Description" />
             </button>

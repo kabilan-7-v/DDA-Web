@@ -35,7 +35,7 @@ function Serv() {
                     Web <br />
                     Development
                   </h2>
-                  <div class="scard1-btn">
+                  <div className="scard1-btn">
                     <button>
                       <img src={arrow} alt="Description" />
                     </button>
@@ -48,7 +48,7 @@ function Serv() {
                     Custom, responsive websites that drive performance and visibility
                   </p>
                 </div>
-                <div class="scard1-image">
+                <div className="scard1-image">
                   <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-1.jpg" />
                 </div>
               </div></a>
@@ -58,7 +58,7 @@ function Serv() {
                 <h2>
                   App <br /> Development
                 </h2>
-                <div class="scard1-btn">
+                <div className="scard1-btn">
                   <button>
                     <img src={arrow} alt="Description" />
                   </button>
@@ -71,7 +71,7 @@ function Serv() {
                   Smart, user-friendly mobile applications for Android and iOS platforms.
                 </p>
               </div>
-              <div class="scard1-image">
+              <div className="scard1-image">
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-2.jpg" />
               </div>
             </div></a>
@@ -80,7 +80,7 @@ function Serv() {
                 <h2>
                   Graphic <br /> Design
                 </h2>
-                <div class="scard1-btn">
+                <div className="scard1-btn">
                   <button>
                     <img src={arrow} alt="Description" />
                   </button>
@@ -93,7 +93,7 @@ function Serv() {
                   Compelling visuals and marketing materials that reflect your brand identity.
                 </p>
               </div>
-              <div class="scard1-image">
+              <div className="scard1-image">
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-3.jpg" />
               </div>
             </div></a>
@@ -102,7 +102,7 @@ function Serv() {
                 <h2>
                   UI/UX <br/> Design
                 </h2>
-                <div class="scard1-btn">
+                <div className="scard1-btn">
                   <button>
                     <img src={arrow} alt="Description" />
                   </button>
@@ -115,7 +115,7 @@ function Serv() {
                   Seamless and engaging user experiences across web and mobile platforms.
                 </p>
               </div>
-              <div class="scard1-image">
+              <div className="scard1-image">
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-4.jpg" />
               </div>
             </div></a>
@@ -124,7 +124,7 @@ function Serv() {
                 <h2>
                   Branding <br/>Design
                 </h2>
-                <div class="scard1-btn">
+                <div className="scard1-btn">
                   <button>
                     <img src={arrow} alt="Description" />
                   </button>
@@ -137,7 +137,7 @@ function Serv() {
                   Strategic brand building from logos to complete identity systems.
                 </p>
               </div>
-              <div class="scard1-image">
+              <div className="scard1-image">
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-5.jpg" />
               </div>
             </div></a>
@@ -146,7 +146,7 @@ function Serv() {
                 <h2>
                   Customized <br/> Products
                 </h2>
-                <div class="scard1-btn">
+                <div className="scard1-btn">
                   <button>
                     <img src={arrow} alt="Description" />
                   </button>
@@ -159,7 +159,7 @@ function Serv() {
                   Bespoke digital and physical solutions to suit your specific business goals.
                 </p>
               </div>
-              <div class="scard1-image">
+              <div className="scard1-image">
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-6.jpg" />
               </div>
             </div>
