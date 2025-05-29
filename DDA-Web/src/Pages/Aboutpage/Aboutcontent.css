@@ -125,7 +125,7 @@
   .about-ab-content-p1{
     font-size: 18px;
     color: rgb(151, 151, 151);
-    margin-top: 20px;
+    margin-top: 10px;
     line-height: 1.8vw;
   }
     @media (max-width: 768px) {

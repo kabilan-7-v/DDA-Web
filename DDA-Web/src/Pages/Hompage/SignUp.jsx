@@ -84,7 +84,7 @@ function SignUp() {
 
             <div className="form-group-su">
               <button type="button" onClick={verify}>
-                <span>{loading ? "Loading..." : "Sign Up"}</span>
+                <span>{loading ? "Loading..." : "Sign In"}</span>
               </button>
             </div>
           </form>

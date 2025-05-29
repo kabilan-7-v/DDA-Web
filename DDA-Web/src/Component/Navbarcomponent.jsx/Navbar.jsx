@@ -53,7 +53,7 @@ function Navbar() {
               
            {islogin?(<LogoutButton></LogoutButton>):
            ( <div className='sign-in'>
-          <a href='/signIn'> <button>Sign in</button></a>
+          <a href='/signIn'> <button>Sign Up</button></a>
             
             </div>)}
              

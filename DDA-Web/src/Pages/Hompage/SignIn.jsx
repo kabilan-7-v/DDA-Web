@@ -257,7 +257,7 @@ function SignIn() {
             }}> Already have a account - <Link style={{
               color: "#003add",
                 textDecoration: "none",
-            }} to={"/signUp"}>signUp</Link></h4>
+            }} to={"/signUp"}>sign in</Link></h4>
           </form>
 
           <div className="image-section-si">
