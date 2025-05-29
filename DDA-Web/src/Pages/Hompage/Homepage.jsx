@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../Component/Navbarcomponent.jsx/Navbar';
 import Abt from '../../Pages/Hompage/Abt';
-import arrow from '../../assets/image/arrow-right.png';
 
 import './Homepage.css';
 import Serv from './Serv';

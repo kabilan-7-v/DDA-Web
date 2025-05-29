@@ -3,9 +3,11 @@ import "./Serv.css";
 import arrow from "../../assets/image/arrow-right.png";
 import CategoryForm from "../../Component/Navbarcomponent.jsx/CategoryForm";
 import { Link } from 'react-router-dom';
-
+import { showPopup } from '../features/popupSlice'; 
+import { useDispatch } from 'react-redux';
 
 function Serv() {
+  const dispatch = useDispatch();
   return (
     <>
       <div className="ser">
@@ -119,7 +121,7 @@ function Serv() {
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-4.jpg" />
               </div>
             </div></a>
-           <a href="/branding-price"> <div className="scard1">
+           <a href="/branding-price" > <div className="scard1">
               <div className="scard1-top">
                 <h2>
                   Branding <br/>Design
@@ -141,7 +143,7 @@ function Serv() {
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-5.jpg" />
               </div>
             </div></a>
-            <div className="scard1">
+            <div className="scard1" onClick={()=> dispatch(showPopup())}>
               <div className="scard1-top">
                 <h2>
                   Customized <br/> Products
