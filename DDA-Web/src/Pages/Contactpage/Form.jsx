@@ -49,6 +49,7 @@ function Form() {
       setEmailVerified(true);
 
       toast.success("We get you back soon ...");
+      
      
     } else {
       alert("Invalid OTP");
@@ -226,7 +227,7 @@ function Form() {
               />
             </div>
             <div className="form-verify">
-            <button type="submit" onClick={verifyotp} disabled={!isOtpComplete}>
+            <button type="button" onClick={verifyotp} disabled={!isOtpComplete}>
               Verify
             </button>
             </div>
