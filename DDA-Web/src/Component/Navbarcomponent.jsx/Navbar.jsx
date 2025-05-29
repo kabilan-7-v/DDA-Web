@@ -50,8 +50,12 @@ function Navbar() {
               <li><Link to="/aboutus" onClick={closeMenu}>About us</Link></li>
               <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
               <li><Link to="/contactus" onClick={closeMenu}>Contact Us</Link></li>
+              
            {islogin?(<LogoutButton></LogoutButton>):
-            ( <a href='/signIn'><p>Sign In</p></a>)}
+           ( <div className='sign-in'>
+          <a href='/signIn'> <button>Sign in</button></a>
+            
+            </div>)}
              
             </ul>
           </nav>

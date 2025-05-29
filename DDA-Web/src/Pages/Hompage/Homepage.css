@@ -18,6 +18,11 @@ body, .banner-content, h1, p, button {
     overflow: hidden;
     margin-top: 70px;
 }
+@media (max-width: 768px) {
+    .banner {
+        background-attachment: scroll;
+    }
+}
 .black-banner{
     width: 100%;
     height: 800px;
@@ -30,16 +35,27 @@ body, .banner-content, h1, p, button {
     background-color:transparent ;
     text-align: center;
 }
+
 .a-p1{
  color: var(--blue);
  background-color: transparent;
  font-size: 25px;
  font-weight: 800;
 }
+@media (max-width: 768px) {
+    .a-p1 {
+        font-size: 20px;
+    }
+}
 .banner-content h1{
     background-color: transparent;
-    font-size:5.5vw;
+    font-size:85px;
     color: white;
+}
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 50px;
+    }
 }
 
 .banner-content span{
@@ -81,6 +97,7 @@ body, .banner-content, h1, p, button {
     margin-top: -15px;
     margin-bottom: -5px;
 }
+
 .popup-overlay {
     position: fixed;
     top: 0;

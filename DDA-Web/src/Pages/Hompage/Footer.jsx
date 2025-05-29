@@ -52,16 +52,18 @@ function Footer() {
   <li>Web Development</li>
 </Link>
 
-<Link to="/branding-price" style={linkStyle}>
-  <li>Branding</li>
-</Link>
-
 <Link to="/app-price" style={linkStyle}>
-  <li>Mobile App Development</li>
+  <li>App Development</li>
 </Link>
 
 <Link to="/graphic" style={linkStyle}>
   <li>Graphic Design</li>
+</Link>
+<Link to="/uxui-price" style={linkStyle}>
+  <li>UI/UX Design</li>
+</Link>
+<Link to="/branding-price" style={linkStyle}>
+  <li>Branding</li>
 </Link>
 
 

@@ -19,6 +19,7 @@
 @media (max-width: 768px) {
   .about {
     height: auto;
+    padding: 25px 1px;
     
   }
 }
@@ -121,7 +122,7 @@
   .about-content-p1 {
      font-size: 16px;
      line-height:20px;
-     margin-top: 180px;
+     margin-top: 250px;
      
   }
 }

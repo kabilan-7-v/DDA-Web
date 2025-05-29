@@ -176,3 +176,11 @@
     margin: 0;
   }
 }
+.sign-in button{
+  background-color: var(--blue);
+  padding: 12px 20px;
+  border-radius: 100px;
+  color: white;
+  border: none;
+  
+}
