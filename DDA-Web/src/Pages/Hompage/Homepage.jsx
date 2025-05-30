@@ -9,23 +9,27 @@ import ChooseUs from './ChooseUs';
 import Footer from './Footer';
 import CategoryForm from '../../Component/Navbarcomponent.jsx/CategoryForm';
 
-import { useDispatch, useSelector } from 'react-redux';
-import { showPopup } from '../features/popupSlice'; // ✅ update import path accordingly
+import { useSelector } from 'react-redux';
+ // ✅ update import path accordingly
+import MyOrders from './MyOrders';
 
 function Homepage() {
-  const dispatch = useDispatch();
   const isVisible = useSelector((state) => state.popup.visible);
+  const userdetails = useSelector((state) => state.popup.usercard);
+
 
   // Show popup after 5 seconds
 
   return (
     <>
-      <div className={`main-content ${isVisible ? 'blurred' : ''}`}>
+    
+      <div className={`main-content ${isVisible||userdetails ? 'blurred' : ''}`}>
         <Navbar />
 
         <div className='banner'>
           <div className='black-banner'></div>
           <div className='banner-content'>
+   
             <p className="a-p1">About Our Company</p>
             <h1>
               Make Your Business <span>Unmissable Online</span>
@@ -54,6 +58,10 @@ function Homepage() {
         <div className="popup-overlay">
           <CategoryForm />
         </div>
+      )}
+      {userdetails && (
+         <div className="popup-overlay">
+          <MyOrders/></div>
       )}
     </>
   );

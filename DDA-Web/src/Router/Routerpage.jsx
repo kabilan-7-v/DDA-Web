@@ -44,7 +44,6 @@ function Routerpage() {
         <Route path="/uxui-price" element={<UxUiPrice></UxUiPrice>} ></Route>
         <Route path="/SignIn" element={<SignIn/>} ></Route>
         <Route path="/SignUp" element={<SignUp></SignUp>} ></Route>
-        <Route path="/My-orders" element={<MyOrders />} ></Route>
         
 
 

@@ -4,6 +4,8 @@ import logo from '../../assets/image/logo.png';
 import { Link } from 'react-router-dom';
 import LoggedInUser from './Loggedinicon';
 import LogoutButton from '../LoggedOut';
+import { useDispatch } from 'react-redux';
+import { showPopup1, showPopup2 } from '../../Pages/features/popupSlice';
 
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -11,6 +13,7 @@ function Navbar() {
   const toggleMenu = () => setMenuOpen(!isMenuOpen);
   const closeMenu = () => setMenuOpen(false);
   const [islogin,setIslogin] =  useState(false);
+  const dispatch = useDispatch();
   useEffect(()=>{
     const login = localStorage.getItem("userData");
     if (login){
@@ -51,10 +54,18 @@ function Navbar() {
               <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
               <li><Link to="/contactus" onClick={closeMenu}>Contact Us</Link></li>
 
-              <div className='orders'>
-           <a href='/My-orders'>    <button>My Orders</button></a> 
+           
+  {islogin && (
+    <li className='orders'>
+      <button onClick={() =>{
+        console.log("hi");
 
-              </div>
+        dispatch(showPopup1());
+        dispatch(showPopup2());
+        console.log();
+      }} type='button'>My Orders</button>
+    </li>
+  )}
               
            {islogin?(<LogoutButton></LogoutButton>):
            ( <div className='sign-in'>
