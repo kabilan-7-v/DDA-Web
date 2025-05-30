@@ -266,7 +266,7 @@ function Form() {
             </div>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.228658369643!2d78.1414504!3d9.9149048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5e8e6bfbeb7%3A0x87151bd0a7a17d01!2sBuff%20Creative%20College%20Madurai!5e0!3m2!1sen!2sin!4v1747647563758!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15720.794486166586!2d78.1364392!3d9.9174096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c50598267a69%3A0x5cf32a819d7d397a!2sDesignDot%20Academy%20Private%20Limited%20Madurai!5e0!3m2!1sen!2sin!4v1748609128345!5m2!1sen!2sin"
               width="100%"
               height="400px"
               style={{ border: 0 }}
