@@ -50,6 +50,11 @@ function Navbar() {
               <li><Link to="/aboutus" onClick={closeMenu}>About us</Link></li>
               <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
               <li><Link to="/contactus" onClick={closeMenu}>Contact Us</Link></li>
+
+              <div className='orders'>
+           <a href='/My-orders'>    <button>My Orders</button></a> 
+
+              </div>
               
            {islogin?(<LogoutButton></LogoutButton>):
            ( <div className='sign-in'>

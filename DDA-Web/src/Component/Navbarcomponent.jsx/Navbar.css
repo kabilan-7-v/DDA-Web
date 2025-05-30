@@ -182,5 +182,13 @@
   border-radius: 100px;
   color: white;
   border: none;
+  border: 1px solid var(--blue);
+}
+.orders button{
+   background-color:white;
+   border: 1px solid var(--blue);
+  padding: 12px 20px;
+  border-radius: 100px;
+  color: var(--blue);
   
 }

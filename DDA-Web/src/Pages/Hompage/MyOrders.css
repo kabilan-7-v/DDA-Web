@@ -1,0 +1,48 @@
+.myorder{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,0.5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-list{
+    width: 800px;
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 30px;
+
+}
+.order-top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.order-top h1{
+    font-size: 25px;
+    
+    margin-left: 25px;
+}
+.order-top svg{
+    font-size: 25px;
+    
+    margin-right: 25px;
+}
+.list1{
+    width: 100%;
+    padding: 10px 25px;
+    display: flex;
+}
+.list1 img{
+    width: 180px;
+    height: 100px;
+    border-radius: 10px;
+}
+.list-des{
+    width: 100%;
+    margin-left: 20px;
+    line-height: 35px;
+}

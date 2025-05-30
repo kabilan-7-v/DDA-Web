@@ -6,26 +6,26 @@
     justify-content: center;
 }
 @media (max-width: 1024px) {
-  .ecomm-price {
+  .ecom-price {
     height:auto;
   }
 }
 @media (max-width: 768px) {
-  .ecomm-price {
+  .ecom-price {
     height: auto;
   }
 }
-.pacakage{
+.package{
     width: 85%;
   
 }
 @media (max-width: 1024px) {
-  .package {
+  .package{
     height:auto;
   }
 }
 @media (max-width: 768px) {
-  .package {
+  .package{
     width: 80%;
     height: auto;
   }
@@ -60,7 +60,7 @@
   }
 }
 .package-h1{
-  font-size: 50px;
+  font-size: 70px;
   background-color: transparent;
 }
 @media (max-width: 768px) {
@@ -179,7 +179,7 @@ line-height: 50px;
   font-size:20px;
 }
 
-.package2 top h3{
+.package2-top h3{
     font-size: 25px;
     margin-bottom: 20px;
     color: white;
