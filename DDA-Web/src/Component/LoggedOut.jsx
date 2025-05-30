@@ -26,7 +26,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     gap: '8px',
-    backgroundColor: '#f44336',
+    backgroundColor: '#003add',
     color: '#fff',
     padding: '10px 10px',
     border: 'none',
