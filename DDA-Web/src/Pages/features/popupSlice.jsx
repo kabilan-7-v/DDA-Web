@@ -7,6 +7,7 @@ const popupSlice = createSlice({
     visible: false,
     usercard: false,
     visible1: false,
+
   },
   reducers: {
     //home customer service
@@ -40,8 +41,9 @@ const popupSlice = createSlice({
     togglePopup2: (state) => {
       state.usercard = !state.usercard;
     },
-  },
-});
+  },}
+ 
+);
 
 export const {
   showPopup,

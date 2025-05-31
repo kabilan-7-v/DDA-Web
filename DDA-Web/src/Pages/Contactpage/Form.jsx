@@ -166,6 +166,25 @@ function Form() {
                     document.getElementById("otp2").focus();
                   }
                 }}
+                onPaste={(e) => {
+                  e.preventDefault();
+                  const pastedData = e.clipboardData.getData("Text").trim().slice(0, 6);
+                  const values = pastedData.split("");
+                  if (values.length === 6) {
+                    setOtp1(values[0]);
+                    setOtp2(values[1]);
+                    setOtp3(values[2]);
+                    setOtp4(values[3]);
+                    setOtp5(values[4]);
+                    setOtp6(values[5]);
+                
+                    // Move focus to the last input
+                    const lastInput = document.getElementById("otp6");
+                    if (lastInput) lastInput.focus();
+                  } else {
+                    toast.error("Please paste a 6-digit OTP.");
+                  }
+                }}
                 maxLength={1}
               />
               <input
@@ -176,6 +195,11 @@ function Form() {
                   setOtp2(e.target.value);
                   if (e.target.value.length === 1) {
                     document.getElementById("otp3").focus();
+                  }
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Backspace" && !otp2) {
+                    document.getElementById("otp1").focus();
                   }
                 }}
                 maxLength={1}
@@ -190,6 +214,11 @@ function Form() {
                     document.getElementById("otp4").focus();
                   }
                 }}
+                onKeyDown={(e) => {
+                  if (e.key === "Backspace" && !otp3) {
+                    document.getElementById("otp2").focus();
+                  }
+                }}
                 maxLength={1}
               />
               <input
@@ -200,6 +229,11 @@ function Form() {
                   setOtp4(e.target.value);
                   if (e.target.value.length === 1) {
                     document.getElementById("otp5").focus();
+                  }
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Backspace" && !otp4) {
+                    document.getElementById("otp3").focus();
                   }
                 }}
                 maxLength={1}
@@ -214,6 +248,11 @@ function Form() {
                     document.getElementById("otp6").focus();
                   }
                 }}
+                onKeyDown={(e) => {
+                  if (e.key === "Backspace" && !otp5) {
+                    document.getElementById("otp4").focus();
+                  }
+                }}
                 maxLength={1}
               />
               <input
@@ -224,6 +263,11 @@ function Form() {
                   setOtp6(e.target.value);
                 }}
                 maxLength={1}
+                onKeyDown={(e) => {
+                  if (e.key === "Backspace" && !otp6) {
+                    document.getElementById("otp5").focus();
+                  }
+                }}
               />
             </div>
             <div className="form-verify">

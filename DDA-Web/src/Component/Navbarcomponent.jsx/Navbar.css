@@ -184,11 +184,19 @@
   border: none;
   border: 1px solid var(--blue);
 }
+.sign-in button:hover{
+  cursor:pointer;
+}
 .orders button{
    background-color:white;
    border: 1px solid var(--blue);
   padding: 12px 20px;
   border-radius: 100px;
   color: var(--blue);
+
   
+}
+
+.orders button:hover{
+  cursor:pointer;
 }

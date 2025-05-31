@@ -6,8 +6,11 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 function SignIn() {
+const [redirect, setRedirect] = useState(false);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -35,13 +38,11 @@ function SignIn() {
   const generateOtp = () => {
     return Math.floor(100000 + Math.random() * 900000).toString();
   };
-  const verifyotp = () => {
-    console.log(otptext, otp);
+  const verifyotp = async() => {
     setIsloading1(true);
     var otp = otp1 + otp2 + otp3 + otp4 + otp5 + otp6;
     if (otptext === otp) {
-      console.log("hello");
-      userregister();
+     await userregister();
       setIsloading1(false);
       
     } else {
@@ -73,7 +74,9 @@ function SignIn() {
     if (!name || !email || !phone || !password) {
       toast.info("Please Fill all the details");
     } else {
-      await axios.post("https://dda-backend-xskh.onrender.com/api/users/register", {
+      try {
+        
+     const response =  await axios.post("https://dda-backend-xskh.onrender.com/api/users/register", {
         "username": name,
         "email": email,
         "phoneNumber": phone,
@@ -85,14 +88,39 @@ function SignIn() {
         },
       }
     );
-      localStorage.setItem("userData", JSON.stringify({
-        "name": name,
-        "email": email,
-        "phone": phone,
-      }));
-      toast.success("User Registered Successfully");
+    localStorage.setItem("userData", JSON.stringify({
+      "name": name,
+      "email": email,
+      "phone": phone,
+    }));
+
+    toast.success("User Registered Successfully");
+    setRedirect(true);
+
+
+  } 
+
+    
+    catch (error) {
+        toast.error("User already exists");
+        const newOtp = generateOtp();
+        setOtptext(newOtp);
+      return;
+    
+        
+    }
+   // Correct way to log status code
+
+      
+     
+      
+    
     }
   };
+  if (redirect) {
+    return <Navigate to="/" replace />;
+  }
+
 
   return (
     <>
@@ -180,6 +208,25 @@ function SignIn() {
                     document.getElementById("otp2").focus();
                   }
                 }}
+                onPaste={(e) => {
+                  e.preventDefault();
+                  const pastedData = e.clipboardData.getData("Text").trim().slice(0, 6);
+                  const values = pastedData.split("");
+                  if (values.length === 6) {
+                    setOtp1(values[0]);
+                    setOtp2(values[1]);
+                    setOtp3(values[2]);
+                    setOtp4(values[3]);
+                    setOtp5(values[4]);
+                    setOtp6(values[5]);
+                
+                    // Move focus to the last input
+                    const lastInput = document.getElementById("otp6");
+                    if (lastInput) lastInput.focus();
+                  } else {
+                    toast.error("Please paste a 6-digit OTP.");
+                  }
+                }}
                 maxLength={1}
               />
               <input
@@ -192,7 +239,14 @@ function SignIn() {
                   if (e.target.value.length === 1) {
                     document.getElementById("otp3").focus();
                   }
-                }}
+                }
+              }
+              onKeyDown={(e) => {
+                if (e.key === "Backspace" && !otp2) {
+                  document.getElementById("otp1").focus();
+                }
+              }}
+              
               />
               <input
                 id="otp3"
@@ -202,6 +256,11 @@ function SignIn() {
                   setOtp3(e.target.value);
                   if (e.target.value.length === 1) {
                     document.getElementById("otp4").focus();
+                  }
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Backspace" && !otp3) {
+                    document.getElementById("otp2").focus();
                   }
                 }}
                 maxLength={1}
@@ -216,6 +275,11 @@ function SignIn() {
                     document.getElementById("otp5").focus();
                   }
                 }}
+                onKeyDown={(e) => {
+                  if (e.key === "Backspace" && !otp4) {
+                    document.getElementById("otp3").focus();
+                  }
+                }}
                 maxLength={1}
               />
               <input
@@ -228,6 +292,11 @@ function SignIn() {
                     document.getElementById("otp6").focus();
                   }
                 }}
+                onKeyDown={(e) => {
+                  if (e.key === "Backspace" && !otp5) {
+                    document.getElementById("otp4").focus();
+                  }
+                }}
                 maxLength={1}
               />
               <input
@@ -237,7 +306,13 @@ function SignIn() {
                 onChange={(e) => {
                   setOtp6(e.target.value);
                 }}
+                onKeyDown={(e) => {
+                  if (e.key === "Backspace" && !otp6) {
+                    document.getElementById("otp5").focus();
+                  }
+                }}
                 maxLength={1}
+             
               />
             </div>
             <div className="form-verify-si">

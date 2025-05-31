@@ -58,11 +58,8 @@ function Navbar() {
   {islogin && (
     <li className='orders'>
       <button onClick={() =>{
-        console.log("hi");
 
-        dispatch(showPopup1());
         dispatch(showPopup2());
-        console.log();
       }} type='button'>My Orders</button>
     </li>
   )}

@@ -18,13 +18,16 @@ import "react-toastify/dist/ReactToastify.css";
 import SignIn from "../Pages/Hompage/SignIn";
 import SignUp from "../Pages/Hompage/SignUp";
 import MyOrders from "../Pages/Hompage/MyOrders";
-
+import { useSelector } from 'react-redux';
 
 function Routerpage() {
+  const userdetails = useSelector((state) => state.popup.usercard);
   return (
     <>
+  
     
     <BrowserRouter>
+    <div className={`main-content ${userdetails ? 'blurred' : ''}`}>
     <ToastContainer style={{
       marginTop:"65px"
     }} />
@@ -52,7 +55,14 @@ function Routerpage() {
 
 
       </Routes>
-    </BrowserRouter></>
+    
+    </div>
+  {userdetails && (
+         <div className="popup-overlay">
+          <MyOrders></MyOrders></div>
+      )}
+    </BrowserRouter>
+    </>
   );
 }
 

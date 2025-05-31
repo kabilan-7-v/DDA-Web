@@ -3,10 +3,10 @@ import "./Serv.css";
 import arrow from "../../assets/image/arrow-right.png";
 import CategoryForm from "../../Component/Navbarcomponent.jsx/CategoryForm";
 import { Link } from 'react-router-dom';
-import { showPopup } from '../features/popupSlice'; 
+import { showPopup,showPopup1 } from '../features/popupSlice'; 
 import { useDispatch } from 'react-redux';
 
-function Serv() {
+function Serv({ishomepage}) {
   const dispatch = useDispatch();
   return (
     <>
@@ -143,7 +143,7 @@ function Serv() {
                 <img src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/service-img-5.jpg" />
               </div>
             </div></a>
-            <div className="scard1" onClick={()=> dispatch(showPopup())}>
+            <div className="scard1" onClick={()=> dispatch(ishomepage? showPopup():showPopup1())}>
               <div className="scard1-top">
                 <h2>
                   Customized <br/> Products

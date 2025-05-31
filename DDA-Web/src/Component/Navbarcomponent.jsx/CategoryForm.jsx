@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { hidePopup } from "../../Pages/features/popupSlice";
+import { hidePopup, hidePopup1 } from "../../Pages/features/popupSlice";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -67,7 +67,7 @@ const loadRazorpay = () =>
     document.body.appendChild(script);
   });
 
-const CategoryForm = () => {
+const CategoryForm = ({ishomepage}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -146,10 +146,10 @@ const CategoryForm = () => {
           );
 
           toast.success("Payment successful");
-          dispatch(hidePopup());
+          dispatch(ishomepage? hidePopup():hidePopup1());
         } else {
           toast.error("Payment verification failed");
-          dispatch(hidePopup());
+          dispatch(ishomepage? hidePopup():hidePopup1());
         }
       },
       prefill: {
@@ -286,7 +286,7 @@ const CategoryForm = () => {
       >
         {" "}
         <button
-          onClick={() => dispatch(hidePopup())}
+          onClick={() => dispatch(ishomepage? hidePopup():hidePopup1())}
           style={{
             position: "absolute",
             top: 10,

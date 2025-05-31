@@ -47,7 +47,7 @@ function Homepage() {
         </div>
 
         <Abt />
-        <Serv />
+        <Serv ishomepage={true} />
         <Work />
         <ChooseUs />
         <Footer />
@@ -56,13 +56,10 @@ function Homepage() {
       {/* Popup Form */}
       {isVisible && (
         <div className="popup-overlay">
-          <CategoryForm />
+          <CategoryForm ishomepage={true} />
         </div>
       )}
-      {userdetails && (
-         <div className="popup-overlay">
-          <MyOrders/></div>
-      )}
+  
     </>
   );
 }
